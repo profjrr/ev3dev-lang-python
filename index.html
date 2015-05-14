@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Python language bindings for ev3dev &mdash; ev3dev 0.2.0 documentation</title>
+    <title>Python language bindings for ev3dev &mdash; ev3dev 0.2.0.post8 documentation</title>
     
     <link rel="stylesheet" href="_static/pyramid.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -14,7 +14,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '0.2.0',
+        VERSION:     '0.2.0.post8',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -23,7 +23,7 @@
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="top" title="ev3dev 0.2.0 documentation" href="#" />
+    <link rel="top" title="ev3dev 0.2.0.post8 documentation" href="#" />
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Neuton&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Nobile:regular,italic,bold,bolditalic&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
 <!--[if lte IE 6]>
@@ -42,7 +42,7 @@
         <li class="right" >
           <a href="py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li><a href="#">ev3dev 0.2.0 documentation</a> &raquo;</li> 
+        <li><a href="#">ev3dev 0.2.0.post8 documentation</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -78,7 +78,7 @@ version.</p>
 </div>
 <div class="section" id="latest-release">
 <h2>Latest release<a class="headerlink" href="#latest-release" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference download internal" href="_downloads/python_ev3dev-latest.egg"><tt class="xref download docutils literal"><span class="pre">0.2.0.post6</span></tt></a></p>
+<p><a class="reference download internal" href="_downloads/python_ev3dev-latest.egg"><tt class="xref download docutils literal"><span class="pre">0.2.0.post8</span></tt></a></p>
 </div>
 <div class="section" id="module-interface">
 <h2>Module interface<a class="headerlink" href="#module-interface" title="Permalink to this headline">¶</a></h2>
@@ -857,6 +857,46 @@ you need to know which port a sensor is plugged in to. However, if you don&#8217
 have more than one sensor of each type, you can just look for a matching
 <cite>driver_name</cite>. Then it will not matter which port a sensor is plugged in to - your
 program will still work.</p>
+<dl class="method">
+<dt id="ev3dev.sensor.bin_data">
+<tt class="descname">bin_data</tt><big>(</big><em>fmt=None</em><big>)</big><a class="headerlink" href="#ev3dev.sensor.bin_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bin Data: read-only
+Reads the unscaled raw values in the <cite>value&lt;N&gt;</cite> attributes as raw byte
+array. Use <cite>bin_data_format</cite>, <cite>num_values</cite> and the individual sensor
+documentation to determine how to interpret the data.</p>
+<p>In case format string is provided, unpacks the raw data and returns the
+unpacked tuple. Without arguments returns the raw data as byte buffer.</p>
+<p>See help(struct) for more on format strings.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ev3dev.sensor.bin_data_format">
+<tt class="descname">bin_data_format</tt><a class="headerlink" href="#ev3dev.sensor.bin_data_format" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bin Data Format: read-only
+Returns the format of the values in <cite>bin_data</cite> for the current mode.
+Possible values are:</p>
+<blockquote>
+<div><ul class="simple">
+<li><cite>u8</cite>: Unsigned 8-bit integer (byte)</li>
+<li><cite>s8</cite>: Signed 8-bit integer (sbyte)</li>
+<li><cite>u16</cite>: Unsigned 16-bit integer (ushort)</li>
+<li><cite>s16</cite>: Signed 16-bit integer (short)</li>
+<li><cite>s16_be</cite>: Signed 16-bit integer, big endian</li>
+<li><cite>s32</cite>: Signed 32-bit integer (int)</li>
+<li><cite>float</cite>: IEEE 754 32-bit floating point (float)</li>
+</ul>
+</div></blockquote>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ev3dev.sensor.bin_data_raw">
+<tt class="descname">bin_data_raw</tt><a class="headerlink" href="#ev3dev.sensor.bin_data_raw" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bin Data: read-only
+Returns the unscaled raw values in the <cite>value&lt;N&gt;</cite> attributes as raw byte
+array. Use <cite>bin_data_format</cite>, <cite>num_values</cite> and the individual sensor
+documentation to determine how to interpret the data.</p>
+</dd></dl>
+
 <dl class="attribute">
 <dt id="ev3dev.sensor.command">
 <tt class="descname">command</tt><a class="headerlink" href="#ev3dev.sensor.command" title="Permalink to this definition">¶</a></dt>
@@ -1338,7 +1378,7 @@ Nothing will be drawn on the screen until this function is called.</p>
         <li class="right" >
           <a href="py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li><a href="#">ev3dev 0.2.0 documentation</a> &raquo;</li> 
+        <li><a href="#">ev3dev 0.2.0.post8 documentation</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer">

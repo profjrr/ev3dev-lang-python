@@ -35,7 +35,7 @@ Take a look at the provided examples_.
 Latest release
 --------------
 
-:download:`0.2.0.post6 <eggs/python_ev3dev-latest.egg>`
+:download:`0.2.0.post8 <eggs/python_ev3dev-latest.egg>`
 
 Module interface
 ----------------
