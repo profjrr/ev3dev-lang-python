@@ -3,38 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Python language bindings for ev3dev
-===================================
-
-This is a python library implementing unified interface for ev3dev_ devices.
-
-Installation
-------------
-
-* Prerequisites::
-
-    apt-get install libboost-python-dev python-setuptools python-pil
-
-* Now, the actual module installation::
-
-    easy_install http://ddemidov.github.io/ev3dev-lang-python/_downloads/python_ev3dev-latest.egg
-
-Same command will upgrade already installed package to the latest available
-version.
-
-.. _ev3dev: http://ev3dev.org
-
-Usage
------
-
-Take a look at the provided examples_.
-
-.. _examples: https://github.com/ddemidov/ev3dev-lang-python/tree/master/demo
-
-Latest release
---------------
-
-:download:`0.2.0.post8 <eggs/python_ev3dev-latest.egg>`
+.. include:: ../README.rst
 
 Module interface
 ----------------
