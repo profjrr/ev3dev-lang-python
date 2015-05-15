@@ -163,46 +163,114 @@ documentation is hosted at <a class="reference external" href="http://ddemidov.g
 <dt id="ev3dev.device">
 <em class="property">class </em><tt class="descclassname">ev3dev.</tt><tt class="descname">device</tt><big>(</big><em>(object)arg1</em><big>)</big><a class="headerlink" href="#ev3dev.device" title="Permalink to this definition">¶</a></dt>
 <dd><p>Generic device</p>
+<dl class="attribute">
+<dt id="ev3dev.device.attr_int">
+<tt class="descname">attr_int</tt><a class="headerlink" href="#ev3dev.device.attr_int" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reads/writes integer attributes.
+Example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">d</span><span class="o">.</span><span class="n">attr_int</span><span class="o">.</span><span class="n">speed_sp</span> <span class="o">=</span> <span class="mi">100</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ev3dev.device.attr_line">
+<tt class="descname">attr_line</tt><a class="headerlink" href="#ev3dev.device.attr_line" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reads line attributes.
+Example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">d</span><span class="o">.</span><span class="n">attr_line</span><span class="o">.</span><span class="n">modes</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ev3dev.device.attr_set">
+<tt class="descname">attr_set</tt><a class="headerlink" href="#ev3dev.device.attr_set" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reads set attributes.
+Example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">d</span><span class="o">.</span><span class="n">attr_set</span><span class="o">.</span><span class="n">commands</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ev3dev.device.attr_string">
+<tt class="descname">attr_string</tt><a class="headerlink" href="#ev3dev.device.attr_string" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reads/writes string attributes.
+Example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">d</span><span class="o">.</span><span class="n">attr_string</span><span class="o">.</span><span class="n">mode</span> <span class="o">=</span> <span class="s">&#39;IR-PROX&#39;</span>
+</pre></div>
+</div>
+</dd></dl>
+
 <dl class="method">
 <dt id="ev3dev.device.connect">
 <tt class="descname">connect</tt><big>(</big><big>)</big><a class="headerlink" href="#ev3dev.device.connect" title="Permalink to this definition">¶</a></dt>
-<dd><p>object connect(tuple args, dict kwds)</p>
+<dd><dl class="docutils">
+<dt>object connect(tuple args, dict kwds) :</dt>
+<dd><p class="first">connect(path, pattern, attr1=val1, ...)</p>
+<p>Tries to connect the device with the provided parameters</p>
+<p>Parameters:</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>path: path in sysfs to search device node under.</dt>
+<dd>Example: &#8216;/sys/class/tacho-motor/&#8217;</dd>
+<dt>pattern: device name pattern.</dt>
+<dd>Example: &#8216;motor&#8217;</dd>
+<dt>keyword arguments: values of device attributes to match</dt>
+<dd>while looking for the device</dd>
+</dl>
+</div></blockquote>
+<p>Example (connect large EV3 motor):</p>
+<div class="last highlight-python"><div class="highlight"><pre><span class="n">d</span> <span class="o">=</span> <span class="n">device</span><span class="p">()</span>
+<span class="n">d</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s">&#39;/sys/class/tacho-motor/&#39;</span><span class="p">,</span> <span class="s">&#39;motor&#39;</span><span class="p">,</span> <span class="n">driver_name</span><span class="o">=</span><span class="s">&#39;lego-ev3-l-motor&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="method">
 <dt id="ev3dev.device.get_attr_from_set">
-<tt class="descname">get_attr_from_set</tt><big>(</big><em>(device)arg1</em>, <em>(str)arg2</em><big>)</big> &rarr; str<a class="headerlink" href="#ev3dev.device.get_attr_from_set" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<tt class="descname">get_attr_from_set</tt><big>(</big><em>(device)arg1</em>, <em>(str)arg2</em><big>)</big> &rarr; str :<a class="headerlink" href="#ev3dev.device.get_attr_from_set" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read current mode from set attribute</p>
+</dd></dl>
 
 <dl class="method">
 <dt id="ev3dev.device.get_attr_int">
-<tt class="descname">get_attr_int</tt><big>(</big><em>(device)arg1</em>, <em>(str)arg2</em><big>)</big> &rarr; int<a class="headerlink" href="#ev3dev.device.get_attr_int" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<tt class="descname">get_attr_int</tt><big>(</big><em>(device)arg1</em>, <em>(str)arg2</em><big>)</big> &rarr; int :<a class="headerlink" href="#ev3dev.device.get_attr_int" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read integer attribute</p>
+</dd></dl>
 
 <dl class="method">
 <dt id="ev3dev.device.get_attr_line">
-<tt class="descname">get_attr_line</tt><big>(</big><em>(device)arg1</em>, <em>(str)arg2</em><big>)</big> &rarr; str<a class="headerlink" href="#ev3dev.device.get_attr_line" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<tt class="descname">get_attr_line</tt><big>(</big><em>(device)arg1</em>, <em>(str)arg2</em><big>)</big> &rarr; str :<a class="headerlink" href="#ev3dev.device.get_attr_line" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read line attribute</p>
+</dd></dl>
 
 <dl class="method">
 <dt id="ev3dev.device.get_attr_set">
-<tt class="descname">get_attr_set</tt><big>(</big><em>(device)arg1</em>, <em>(str)arg2</em><span class="optional">[</span>, <em>(str)arg3</em><span class="optional">]</span><big>)</big> &rarr; mode_set<a class="headerlink" href="#ev3dev.device.get_attr_set" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<tt class="descname">get_attr_set</tt><big>(</big><em>(device)arg1</em>, <em>(str)arg2</em><span class="optional">[</span>, <em>(str)name</em><span class="optional">]</span><big>)</big> &rarr; mode_set :<a class="headerlink" href="#ev3dev.device.get_attr_set" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read set attribute</p>
+</dd></dl>
 
 <dl class="method">
 <dt id="ev3dev.device.get_attr_string">
-<tt class="descname">get_attr_string</tt><big>(</big><em>(device)arg1</em>, <em>(str)arg2</em><big>)</big> &rarr; str<a class="headerlink" href="#ev3dev.device.get_attr_string" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<tt class="descname">get_attr_string</tt><big>(</big><em>(device)arg1</em>, <em>(str)arg2</em><big>)</big> &rarr; str :<a class="headerlink" href="#ev3dev.device.get_attr_string" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read string attribute</p>
+</dd></dl>
 
 <dl class="method">
 <dt id="ev3dev.device.set_attr_int">
-<tt class="descname">set_attr_int</tt><big>(</big><em>(device)arg1</em>, <em>(str)arg2</em>, <em>(int)arg3</em><big>)</big> &rarr; None<a class="headerlink" href="#ev3dev.device.set_attr_int" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<tt class="descname">set_attr_int</tt><big>(</big><em>(device)arg1</em>, <em>(str)arg2</em>, <em>(int)arg3</em><big>)</big> &rarr; None :<a class="headerlink" href="#ev3dev.device.set_attr_int" title="Permalink to this definition">¶</a></dt>
+<dd><p>Write integer attribute</p>
+</dd></dl>
 
 <dl class="method">
 <dt id="ev3dev.device.set_attr_string">
-<tt class="descname">set_attr_string</tt><big>(</big><em>(device)arg1</em>, <em>(str)arg2</em>, <em>(str)arg3</em><big>)</big> &rarr; None<a class="headerlink" href="#ev3dev.device.set_attr_string" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<tt class="descname">set_attr_string</tt><big>(</big><em>(device)arg1</em>, <em>(str)arg2</em>, <em>(str)arg3</em><big>)</big> &rarr; None :<a class="headerlink" href="#ev3dev.device.set_attr_string" title="Permalink to this definition">¶</a></dt>
+<dd><p>Write string attribute</p>
+</dd></dl>
 
 </dd></dl>
 
@@ -422,10 +490,10 @@ the command specified by <cite>stop_command</cite>.</p>
 <dt id="ev3dev.motor.set">
 <tt class="descname">set</tt><big>(</big><em>device</em>, <em>**attr</em><big>)</big><a class="headerlink" href="#ev3dev.motor.set" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set device attributes provided as keyword arguments</p>
-<dl class="docutils">
-<dt>Example:</dt>
-<dd>motor.set(speed_regulation_enabled=&#8217;on&#8217;, stop_command=&#8217;brake&#8217;)</dd>
-</dl>
+<p>Example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">motor</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">speed_regulation_enabled</span><span class="o">=</span><span class="s">&#39;on&#39;</span><span class="p">,</span> <span class="n">stop_command</span><span class="o">=</span><span class="s">&#39;brake&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
 </dd></dl>
 
 <dl class="attribute">
@@ -639,10 +707,10 @@ and then stop the motor using the command specified by <cite>stop_command</cite>
 <dt id="ev3dev.dc_motor.set">
 <tt class="descname">set</tt><big>(</big><em>device</em>, <em>**attr</em><big>)</big><a class="headerlink" href="#ev3dev.dc_motor.set" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set device attributes provided as keyword arguments</p>
-<dl class="docutils">
-<dt>Example:</dt>
-<dd>motor.set(speed_regulation_enabled=&#8217;on&#8217;, stop_command=&#8217;brake&#8217;)</dd>
-</dl>
+<p>Example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">motor</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">speed_regulation_enabled</span><span class="o">=</span><span class="s">&#39;on&#39;</span><span class="p">,</span> <span class="n">stop_command</span><span class="o">=</span><span class="s">&#39;brake&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
 </dd></dl>
 
 <dl class="attribute">
@@ -789,10 +857,10 @@ servos, this value will affect the rate_sp at which the speed ramps up or down.<
 <dt id="ev3dev.servo_motor.set">
 <tt class="descname">set</tt><big>(</big><em>device</em>, <em>**attr</em><big>)</big><a class="headerlink" href="#ev3dev.servo_motor.set" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set device attributes provided as keyword arguments</p>
-<dl class="docutils">
-<dt>Example:</dt>
-<dd>motor.set(speed_regulation_enabled=&#8217;on&#8217;, stop_command=&#8217;brake&#8217;)</dd>
-</dl>
+<p>Example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">motor</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">speed_regulation_enabled</span><span class="o">=</span><span class="s">&#39;on&#39;</span><span class="p">,</span> <span class="n">stop_command</span><span class="o">=</span><span class="s">&#39;brake&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
 </dd></dl>
 
 <dl class="attribute">
@@ -827,13 +895,12 @@ specified steering.</p>
 </dd>
 <dt>Output:</dt>
 <dd>a tuple of power values for a pair of motors.</dd>
-<dt>Example:</dt>
-<dd><dl class="first last docutils">
-<dt>for (motor, power) in zip((left_motor, right_motor), steering(50, 900)):</dt>
-<dd>motor.run_forever(speed_sp=power)</dd>
 </dl>
-</dd>
-</dl>
+<p>Example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="p">(</span><span class="n">motor</span><span class="p">,</span> <span class="n">power</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">((</span><span class="n">left_motor</span><span class="p">,</span> <span class="n">right_motor</span><span class="p">),</span> <span class="n">steering</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span> <span class="mi">900</span><span class="p">)):</span>
+    <span class="n">motor</span><span class="o">.</span><span class="n">run_forever</span><span class="p">(</span><span class="n">speed_sp</span><span class="o">=</span><span class="n">power</span><span class="p">)</span>
+</pre></div>
+</div>
 </dd></dl>
 
 </div>
@@ -927,8 +994,9 @@ sensors] for a complete list of drivers.</p>
 
 <dl class="method">
 <dt id="ev3dev.sensor.float_value">
-<tt class="descname">float_value</tt><big>(</big><em>(sensor)arg1</em><span class="optional">[</span>, <em>(int)arg2</em><span class="optional">]</span><big>)</big> &rarr; float<a class="headerlink" href="#ev3dev.sensor.float_value" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<tt class="descname">float_value</tt><big>(</big><em>(sensor)arg1</em><span class="optional">[</span>, <em>(int)index=0</em><span class="optional">]</span><big>)</big> &rarr; float :<a class="headerlink" href="#ev3dev.sensor.float_value" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reads scaled sensor value</p>
+</dd></dl>
 
 <dl class="attribute">
 <dt id="ev3dev.sensor.mode">
@@ -965,10 +1033,10 @@ I2C sensors also include the I2C address (decimal), e.g. <cite>ev3:in1:i2c8</cit
 <dt id="ev3dev.sensor.set">
 <tt class="descname">set</tt><big>(</big><em>device</em>, <em>**attr</em><big>)</big><a class="headerlink" href="#ev3dev.sensor.set" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set device attributes provided as keyword arguments</p>
-<dl class="docutils">
-<dt>Example:</dt>
-<dd>motor.set(speed_regulation_enabled=&#8217;on&#8217;, stop_command=&#8217;brake&#8217;)</dd>
-</dl>
+<p>Example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">motor</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">speed_regulation_enabled</span><span class="o">=</span><span class="s">&#39;on&#39;</span><span class="p">,</span> <span class="n">stop_command</span><span class="o">=</span><span class="s">&#39;brake&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
 </dd></dl>
 
 <dl class="attribute">
@@ -981,8 +1049,9 @@ empty string</p>
 
 <dl class="method">
 <dt id="ev3dev.sensor.value">
-<tt class="descname">value</tt><big>(</big><em>(sensor)arg1</em><span class="optional">[</span>, <em>(int)arg2</em><span class="optional">]</span><big>)</big> &rarr; int<a class="headerlink" href="#ev3dev.sensor.value" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<tt class="descname">value</tt><big>(</big><em>(sensor)arg1</em><span class="optional">[</span>, <em>(int)index=0</em><span class="optional">]</span><big>)</big> &rarr; int :<a class="headerlink" href="#ev3dev.sensor.value" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reads unscaled sensor value</p>
+</dd></dl>
 
 </dd></dl>
 
@@ -1292,10 +1361,10 @@ Provides drawing functions from python imaging library (PIL).</p>
 <dt id="ev3dev.LCD.draw">
 <tt class="descname">draw</tt><a class="headerlink" href="#ev3dev.LCD.draw" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns a handle to PIL.ImageDraw.Draw class associated with LCD.</p>
-<dl class="docutils">
-<dt>Example:</dt>
-<dd>lcd.draw.rectangle((10,10,60,20), fill=True)</dd>
-</dl>
+<p>Example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">lcd</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">rectangle</span><span class="p">((</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">60</span><span class="p">,</span><span class="mi">20</span><span class="p">),</span> <span class="n">fill</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+</pre></div>
+</div>
 </dd></dl>
 
 <dl class="attribute">
