@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Python language bindings for ev3dev &mdash; ev3dev 0.2.0.post14 documentation</title>
+    <title>Python language bindings for ev3dev &mdash; ev3dev 0.2.0.post15 documentation</title>
     
     <link rel="stylesheet" href="_static/pyramid.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -14,7 +14,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '0.2.0.post14',
+        VERSION:     '0.2.0.post15',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -23,7 +23,7 @@
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="top" title="ev3dev 0.2.0.post14 documentation" href="#" />
+    <link rel="top" title="ev3dev 0.2.0.post15 documentation" href="#" />
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Neuton&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Nobile:regular,italic,bold,bolditalic&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
 <!--[if lte IE 6]>
@@ -31,9 +31,9 @@
 <![endif]-->
 
   </head>
-  <body>
+  <body role="document">
 
-    <div class="related">
+    <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
@@ -42,14 +42,14 @@
         <li class="right" >
           <a href="py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li><a href="#">ev3dev 0.2.0.post14 documentation</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="#">ev3dev 0.2.0.post15 documentation</a> &raquo;</li> 
       </ul>
     </div>  
 
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="python-language-bindings-for-ev3dev">
 <h1>Python language bindings for ev3dev<a class="headerlink" href="#python-language-bindings-for-ev3dev" title="Permalink to this headline">¶</a></h1>
@@ -83,89 +83,92 @@ documentation is hosted at <a class="reference external" href="http://ddemidov.g
 <ul class="simple">
 </ul>
 </div>
-<table border="1" class="longtable docutils">
+<span class="target" id="module-ev3dev"></span><table border="1" class="longtable docutils">
 <colgroup>
 <col width="10%" />
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="#ev3dev.device" title="ev3dev.device"><tt class="xref py py-obj docutils literal"><span class="pre">ev3dev.device</span></tt></a>((object)arg1)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#ev3dev.device" title="ev3dev.device"><code class="xref py py-obj docutils literal"><span class="pre">device</span></code></a></td>
 <td>Generic device</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#ev3dev.motor" title="ev3dev.motor"><tt class="xref py py-obj docutils literal"><span class="pre">ev3dev.motor</span></tt></a>((object)arg1,&nbsp;(str)port)</td>
+<tr class="row-even"><td><a class="reference internal" href="#ev3dev.motor" title="ev3dev.motor"><code class="xref py py-obj docutils literal"><span class="pre">motor</span></code></a></td>
 <td>The motor class provides a uniform interface for using motors with positional and directional feedback such as the EV3 and NXT motors.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#ev3dev.dc_motor" title="ev3dev.dc_motor"><tt class="xref py py-obj docutils literal"><span class="pre">ev3dev.dc_motor</span></tt></a>((object)arg1)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#ev3dev.dc_motor" title="ev3dev.dc_motor"><code class="xref py py-obj docutils literal"><span class="pre">dc_motor</span></code></a></td>
 <td>The DC motor class provides a uniform interface for using regular DC motors with no fancy controls or feedback.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#ev3dev.servo_motor" title="ev3dev.servo_motor"><tt class="xref py py-obj docutils literal"><span class="pre">ev3dev.servo_motor</span></tt></a>((object)arg1)</td>
+<tr class="row-even"><td><a class="reference internal" href="#ev3dev.servo_motor" title="ev3dev.servo_motor"><code class="xref py py-obj docutils literal"><span class="pre">servo_motor</span></code></a></td>
 <td>The servo motor class provides a uniform interface for using hobby type servo motors.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#ev3dev.medium_motor" title="ev3dev.medium_motor"><tt class="xref py py-obj docutils literal"><span class="pre">ev3dev.medium_motor</span></tt></a>((object)arg1)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#ev3dev.medium_motor" title="ev3dev.medium_motor"><code class="xref py py-obj docutils literal"><span class="pre">medium_motor</span></code></a></td>
 <td>EV3 medium motor</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#ev3dev.large_motor" title="ev3dev.large_motor"><tt class="xref py py-obj docutils literal"><span class="pre">ev3dev.large_motor</span></tt></a>((object)arg1)</td>
+<tr class="row-even"><td><a class="reference internal" href="#ev3dev.large_motor" title="ev3dev.large_motor"><code class="xref py py-obj docutils literal"><span class="pre">large_motor</span></code></a></td>
 <td>EV3 large motor</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#ev3dev.sensor" title="ev3dev.sensor"><tt class="xref py py-obj docutils literal"><span class="pre">ev3dev.sensor</span></tt></a>((object)arg1,&nbsp;(str)port)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#ev3dev.steering" title="ev3dev.steering"><code class="xref py py-obj docutils literal"><span class="pre">steering</span></code></a></td>
+<td>Computes how fast each motor in a pair should turn to achieve the specified steering.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#ev3dev.sensor" title="ev3dev.sensor"><code class="xref py py-obj docutils literal"><span class="pre">sensor</span></code></a></td>
 <td>The sensor class provides a uniform interface for using most of the sensors available for the EV3.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#ev3dev.i2c_sensor" title="ev3dev.i2c_sensor"><tt class="xref py py-obj docutils literal"><span class="pre">ev3dev.i2c_sensor</span></tt></a>((object)arg1)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#ev3dev.i2c_sensor" title="ev3dev.i2c_sensor"><code class="xref py py-obj docutils literal"><span class="pre">i2c_sensor</span></code></a></td>
 <td>A generic interface to control I2C-type EV3 sensors.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#ev3dev.touch_sensor" title="ev3dev.touch_sensor"><tt class="xref py py-obj docutils literal"><span class="pre">ev3dev.touch_sensor</span></tt></a>((object)arg1)</td>
+<tr class="row-even"><td><a class="reference internal" href="#ev3dev.touch_sensor" title="ev3dev.touch_sensor"><code class="xref py py-obj docutils literal"><span class="pre">touch_sensor</span></code></a></td>
 <td>Touch sensor</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#ev3dev.color_sensor" title="ev3dev.color_sensor"><tt class="xref py py-obj docutils literal"><span class="pre">ev3dev.color_sensor</span></tt></a>((object)arg1)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#ev3dev.color_sensor" title="ev3dev.color_sensor"><code class="xref py py-obj docutils literal"><span class="pre">color_sensor</span></code></a></td>
 <td>LEGO EV3 color sensor.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#ev3dev.ultrasonic_sensor" title="ev3dev.ultrasonic_sensor"><tt class="xref py py-obj docutils literal"><span class="pre">ev3dev.ultrasonic_sensor</span></tt></a>((object)arg1)</td>
+<tr class="row-even"><td><a class="reference internal" href="#ev3dev.ultrasonic_sensor" title="ev3dev.ultrasonic_sensor"><code class="xref py py-obj docutils literal"><span class="pre">ultrasonic_sensor</span></code></a></td>
 <td>LEGO EV3 ultrasonic sensor.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#ev3dev.gyro_sensor" title="ev3dev.gyro_sensor"><tt class="xref py py-obj docutils literal"><span class="pre">ev3dev.gyro_sensor</span></tt></a>((object)arg1)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#ev3dev.gyro_sensor" title="ev3dev.gyro_sensor"><code class="xref py py-obj docutils literal"><span class="pre">gyro_sensor</span></code></a></td>
 <td>LEGO EV3 gyro sensor.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#ev3dev.sound_sensor" title="ev3dev.sound_sensor"><tt class="xref py py-obj docutils literal"><span class="pre">ev3dev.sound_sensor</span></tt></a>((object)arg1)</td>
+<tr class="row-even"><td><a class="reference internal" href="#ev3dev.sound_sensor" title="ev3dev.sound_sensor"><code class="xref py py-obj docutils literal"><span class="pre">sound_sensor</span></code></a></td>
 <td>LEGO NXT Sound Sensor</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#ev3dev.light_sensor" title="ev3dev.light_sensor"><tt class="xref py py-obj docutils literal"><span class="pre">ev3dev.light_sensor</span></tt></a>((object)arg1)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#ev3dev.light_sensor" title="ev3dev.light_sensor"><code class="xref py py-obj docutils literal"><span class="pre">light_sensor</span></code></a></td>
 <td>LEGO NXT Light Sensor</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#ev3dev.infrared_sensor" title="ev3dev.infrared_sensor"><tt class="xref py py-obj docutils literal"><span class="pre">ev3dev.infrared_sensor</span></tt></a>((object)arg1)</td>
+<tr class="row-even"><td><a class="reference internal" href="#ev3dev.infrared_sensor" title="ev3dev.infrared_sensor"><code class="xref py py-obj docutils literal"><span class="pre">infrared_sensor</span></code></a></td>
 <td>LEGO EV3 infrared sensor.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#ev3dev.remote_control" title="ev3dev.remote_control"><tt class="xref py py-obj docutils literal"><span class="pre">ev3dev.remote_control</span></tt></a>((object)arg1)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#ev3dev.remote_control" title="ev3dev.remote_control"><code class="xref py py-obj docutils literal"><span class="pre">remote_control</span></code></a></td>
 <td>EV3 remote control</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#ev3dev.led" title="ev3dev.led"><tt class="xref py py-obj docutils literal"><span class="pre">ev3dev.led</span></tt></a>((object)arg1,&nbsp;(str)name)</td>
+<tr class="row-even"><td><a class="reference internal" href="#ev3dev.led" title="ev3dev.led"><code class="xref py py-obj docutils literal"><span class="pre">led</span></code></a></td>
 <td>Any device controlled by the generic LED driver.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#ev3dev.power_supply" title="ev3dev.power_supply"><tt class="xref py py-obj docutils literal"><span class="pre">ev3dev.power_supply</span></tt></a>((object)arg1,&nbsp;(str)name)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#ev3dev.power_supply" title="ev3dev.power_supply"><code class="xref py py-obj docutils literal"><span class="pre">power_supply</span></code></a></td>
 <td>A generic interface to read data from the system&#8217;s power_supply class.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#ev3dev.button" title="ev3dev.button"><tt class="xref py py-obj docutils literal"><span class="pre">ev3dev.button</span></tt></a>((object)arg1,&nbsp;(int)bit)</td>
+<tr class="row-even"><td><a class="reference internal" href="#ev3dev.button" title="ev3dev.button"><code class="xref py py-obj docutils literal"><span class="pre">button</span></code></a></td>
 <td>EV3 buttons</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#ev3dev.sound" title="ev3dev.sound"><tt class="xref py py-obj docutils literal"><span class="pre">ev3dev.sound</span></tt></a>((object)arg1)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#ev3dev.sound" title="ev3dev.sound"><code class="xref py py-obj docutils literal"><span class="pre">sound</span></code></a></td>
 <td>EV3 sound</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#ev3dev.lcd" title="ev3dev.lcd"><tt class="xref py py-obj docutils literal"><span class="pre">ev3dev.lcd</span></tt></a>((object)arg1)</td>
+<tr class="row-even"><td><a class="reference internal" href="#ev3dev.lcd" title="ev3dev.lcd"><code class="xref py py-obj docutils literal"><span class="pre">lcd</span></code></a></td>
 <td>EV3 LCD</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#ev3dev.LCD" title="ev3dev.LCD"><tt class="xref py py-obj docutils literal"><span class="pre">ev3dev.LCD</span></tt></a>()</td>
+<tr class="row-odd"><td><a class="reference internal" href="#ev3dev.LCD" title="ev3dev.LCD"><code class="xref py py-obj docutils literal"><span class="pre">LCD</span></code></a></td>
 <td>A convenience wrapper for ev3dev.lcd class.</td>
 </tr>
 </tbody>
 </table>
-<span class="target" id="module-ev3dev"></span><div class="section" id="generic-device">
+<div class="section" id="generic-device">
 <h3>Generic device<a class="headerlink" href="#generic-device" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="ev3dev.device">
-<em class="property">class </em><tt class="descclassname">ev3dev.</tt><tt class="descname">device</tt><big>(</big><em>(object)arg1</em><big>)</big><a class="headerlink" href="#ev3dev.device" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">ev3dev.</code><code class="descname">device</code><a class="headerlink" href="#ev3dev.device" title="Permalink to this definition">¶</a></dt>
 <dd><p>Generic device</p>
 <dl class="attribute">
 <dt id="ev3dev.device.attr_int">
-<tt class="descname">attr_int</tt><a class="headerlink" href="#ev3dev.device.attr_int" title="Permalink to this definition">¶</a></dt>
+<code class="descname">attr_int</code><a class="headerlink" href="#ev3dev.device.attr_int" title="Permalink to this definition">¶</a></dt>
 <dd><p>Reads/writes integer attributes.
 Example:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">d</span><span class="o">.</span><span class="n">attr_int</span><span class="o">.</span><span class="n">speed_sp</span> <span class="o">=</span> <span class="mi">100</span>
@@ -175,7 +178,7 @@ Example:</p>
 
 <dl class="attribute">
 <dt id="ev3dev.device.attr_line">
-<tt class="descname">attr_line</tt><a class="headerlink" href="#ev3dev.device.attr_line" title="Permalink to this definition">¶</a></dt>
+<code class="descname">attr_line</code><a class="headerlink" href="#ev3dev.device.attr_line" title="Permalink to this definition">¶</a></dt>
 <dd><p>Reads line attributes.
 Example:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">d</span><span class="o">.</span><span class="n">attr_line</span><span class="o">.</span><span class="n">modes</span><span class="p">)</span>
@@ -185,7 +188,7 @@ Example:</p>
 
 <dl class="attribute">
 <dt id="ev3dev.device.attr_set">
-<tt class="descname">attr_set</tt><a class="headerlink" href="#ev3dev.device.attr_set" title="Permalink to this definition">¶</a></dt>
+<code class="descname">attr_set</code><a class="headerlink" href="#ev3dev.device.attr_set" title="Permalink to this definition">¶</a></dt>
 <dd><p>Reads set attributes.
 Example:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">d</span><span class="o">.</span><span class="n">attr_set</span><span class="o">.</span><span class="n">commands</span><span class="p">)</span>
@@ -195,7 +198,7 @@ Example:</p>
 
 <dl class="attribute">
 <dt id="ev3dev.device.attr_string">
-<tt class="descname">attr_string</tt><a class="headerlink" href="#ev3dev.device.attr_string" title="Permalink to this definition">¶</a></dt>
+<code class="descname">attr_string</code><a class="headerlink" href="#ev3dev.device.attr_string" title="Permalink to this definition">¶</a></dt>
 <dd><p>Reads/writes string attributes.
 Example:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">d</span><span class="o">.</span><span class="n">attr_string</span><span class="o">.</span><span class="n">mode</span> <span class="o">=</span> <span class="s">&#39;IR-PROX&#39;</span>
@@ -205,7 +208,7 @@ Example:</p>
 
 <dl class="method">
 <dt id="ev3dev.device.connect">
-<tt class="descname">connect</tt><big>(</big><big>)</big><a class="headerlink" href="#ev3dev.device.connect" title="Permalink to this definition">¶</a></dt>
+<code class="descname">connect</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ev3dev.device.connect" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>object connect(tuple args, dict kwds) :</dt>
 <dd><p class="first">connect(path, pattern, attr1=val1, ...)</p>
@@ -232,43 +235,43 @@ Example:</p>
 
 <dl class="method">
 <dt id="ev3dev.device.get_attr_from_set">
-<tt class="descname">get_attr_from_set</tt><big>(</big><em>(device)arg1</em>, <em>(str)arg2</em><big>)</big> &rarr; str :<a class="headerlink" href="#ev3dev.device.get_attr_from_set" title="Permalink to this definition">¶</a></dt>
+<code class="descname">get_attr_from_set</code><span class="sig-paren">(</span><em>(device)arg1</em>, <em>(str)arg2</em><span class="sig-paren">)</span> &rarr; str :<a class="headerlink" href="#ev3dev.device.get_attr_from_set" title="Permalink to this definition">¶</a></dt>
 <dd><p>Read current mode from set attribute</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="ev3dev.device.get_attr_int">
-<tt class="descname">get_attr_int</tt><big>(</big><em>(device)arg1</em>, <em>(str)arg2</em><big>)</big> &rarr; int :<a class="headerlink" href="#ev3dev.device.get_attr_int" title="Permalink to this definition">¶</a></dt>
+<code class="descname">get_attr_int</code><span class="sig-paren">(</span><em>(device)arg1</em>, <em>(str)arg2</em><span class="sig-paren">)</span> &rarr; int :<a class="headerlink" href="#ev3dev.device.get_attr_int" title="Permalink to this definition">¶</a></dt>
 <dd><p>Read integer attribute</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="ev3dev.device.get_attr_line">
-<tt class="descname">get_attr_line</tt><big>(</big><em>(device)arg1</em>, <em>(str)arg2</em><big>)</big> &rarr; str :<a class="headerlink" href="#ev3dev.device.get_attr_line" title="Permalink to this definition">¶</a></dt>
+<code class="descname">get_attr_line</code><span class="sig-paren">(</span><em>(device)arg1</em>, <em>(str)arg2</em><span class="sig-paren">)</span> &rarr; str :<a class="headerlink" href="#ev3dev.device.get_attr_line" title="Permalink to this definition">¶</a></dt>
 <dd><p>Read line attribute</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="ev3dev.device.get_attr_set">
-<tt class="descname">get_attr_set</tt><big>(</big><em>(device)arg1</em>, <em>(str)arg2</em><span class="optional">[</span>, <em>(str)name</em><span class="optional">]</span><big>)</big> &rarr; mode_set :<a class="headerlink" href="#ev3dev.device.get_attr_set" title="Permalink to this definition">¶</a></dt>
+<code class="descname">get_attr_set</code><span class="sig-paren">(</span><em>(device)arg1</em>, <em>(str)arg2</em><span class="optional">[</span>, <em>(str)name</em><span class="optional">]</span><span class="sig-paren">)</span> &rarr; mode_set :<a class="headerlink" href="#ev3dev.device.get_attr_set" title="Permalink to this definition">¶</a></dt>
 <dd><p>Read set attribute</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="ev3dev.device.get_attr_string">
-<tt class="descname">get_attr_string</tt><big>(</big><em>(device)arg1</em>, <em>(str)arg2</em><big>)</big> &rarr; str :<a class="headerlink" href="#ev3dev.device.get_attr_string" title="Permalink to this definition">¶</a></dt>
+<code class="descname">get_attr_string</code><span class="sig-paren">(</span><em>(device)arg1</em>, <em>(str)arg2</em><span class="sig-paren">)</span> &rarr; str :<a class="headerlink" href="#ev3dev.device.get_attr_string" title="Permalink to this definition">¶</a></dt>
 <dd><p>Read string attribute</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="ev3dev.device.set_attr_int">
-<tt class="descname">set_attr_int</tt><big>(</big><em>(device)arg1</em>, <em>(str)arg2</em>, <em>(int)arg3</em><big>)</big> &rarr; None :<a class="headerlink" href="#ev3dev.device.set_attr_int" title="Permalink to this definition">¶</a></dt>
+<code class="descname">set_attr_int</code><span class="sig-paren">(</span><em>(device)arg1</em>, <em>(str)arg2</em>, <em>(int)arg3</em><span class="sig-paren">)</span> &rarr; None :<a class="headerlink" href="#ev3dev.device.set_attr_int" title="Permalink to this definition">¶</a></dt>
 <dd><p>Write integer attribute</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="ev3dev.device.set_attr_string">
-<tt class="descname">set_attr_string</tt><big>(</big><em>(device)arg1</em>, <em>(str)arg2</em>, <em>(str)arg3</em><big>)</big> &rarr; None :<a class="headerlink" href="#ev3dev.device.set_attr_string" title="Permalink to this definition">¶</a></dt>
+<code class="descname">set_attr_string</code><span class="sig-paren">(</span><em>(device)arg1</em>, <em>(str)arg2</em>, <em>(str)arg3</em><span class="sig-paren">)</span> &rarr; None :<a class="headerlink" href="#ev3dev.device.set_attr_string" title="Permalink to this definition">¶</a></dt>
 <dd><p>Write string attribute</p>
 </dd></dl>
 
@@ -279,14 +282,14 @@ Example:</p>
 <h3>Motors<a class="headerlink" href="#motors" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="ev3dev.motor">
-<em class="property">class </em><tt class="descclassname">ev3dev.</tt><tt class="descname">motor</tt><big>(</big><em>(object)arg1</em>, <em>(str)port</em><big>)</big><a class="headerlink" href="#ev3dev.motor" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">ev3dev.</code><code class="descname">motor</code><a class="headerlink" href="#ev3dev.motor" title="Permalink to this definition">¶</a></dt>
 <dd><p>The motor class provides a uniform interface for using motors with
 positional and directional feedback such as the EV3 and NXT motors.
 This feedback allows for precise control of the motors. This is the
 most common type of motor, so we just call it <cite>motor</cite>.</p>
 <dl class="attribute">
 <dt id="ev3dev.motor.command">
-<tt class="descname">command</tt><a class="headerlink" href="#ev3dev.motor.command" title="Permalink to this definition">¶</a></dt>
+<code class="descname">command</code><a class="headerlink" href="#ev3dev.motor.command" title="Permalink to this definition">¶</a></dt>
 <dd><p>Command: write-only</p>
 <p>Sends a command to the motor controller. See <cite>commands</cite> for a list of
 possible values.</p>
@@ -294,7 +297,7 @@ possible values.</p>
 
 <dl class="attribute">
 <dt id="ev3dev.motor.commands">
-<tt class="descname">commands</tt><a class="headerlink" href="#ev3dev.motor.commands" title="Permalink to this definition">¶</a></dt>
+<code class="descname">commands</code><a class="headerlink" href="#ev3dev.motor.commands" title="Permalink to this definition">¶</a></dt>
 <dd><p>Commands: read-only</p>
 <p>Returns a space separated list of commands that are supported by the motor
 controller. Possible values are <cite>run-forever</cite>, <cite>run-to-abs-pos</cite>, <cite>run-to-rel-pos</cite>,
@@ -318,7 +321,7 @@ This will also have the effect of stopping the motor.</p>
 
 <dl class="attribute">
 <dt id="ev3dev.motor.count_per_rot">
-<tt class="descname">count_per_rot</tt><a class="headerlink" href="#ev3dev.motor.count_per_rot" title="Permalink to this definition">¶</a></dt>
+<code class="descname">count_per_rot</code><a class="headerlink" href="#ev3dev.motor.count_per_rot" title="Permalink to this definition">¶</a></dt>
 <dd><p>Count Per Rot: read-only</p>
 <p>Returns the number of tacho counts in one rotation of the motor. Tacho counts
 are used by the position and speed attributes, so you can use this value
@@ -328,14 +331,14 @@ actuators, the units here will be counts per centimeter.</p>
 
 <dl class="attribute">
 <dt id="ev3dev.motor.driver_name">
-<tt class="descname">driver_name</tt><a class="headerlink" href="#ev3dev.motor.driver_name" title="Permalink to this definition">¶</a></dt>
+<code class="descname">driver_name</code><a class="headerlink" href="#ev3dev.motor.driver_name" title="Permalink to this definition">¶</a></dt>
 <dd><p>Driver Name: read-only</p>
 <p>Returns the name of the driver that provides this tacho motor device.</p>
 </dd></dl>
 
 <dl class="attribute">
 <dt id="ev3dev.motor.duty_cycle">
-<tt class="descname">duty_cycle</tt><a class="headerlink" href="#ev3dev.motor.duty_cycle" title="Permalink to this definition">¶</a></dt>
+<code class="descname">duty_cycle</code><a class="headerlink" href="#ev3dev.motor.duty_cycle" title="Permalink to this definition">¶</a></dt>
 <dd><p>Duty Cycle: read-only</p>
 <p>Returns the current duty cycle of the motor. Units are percent. Values
 are -100 to 100.</p>
@@ -343,7 +346,7 @@ are -100 to 100.</p>
 
 <dl class="attribute">
 <dt id="ev3dev.motor.duty_cycle_sp">
-<tt class="descname">duty_cycle_sp</tt><a class="headerlink" href="#ev3dev.motor.duty_cycle_sp" title="Permalink to this definition">¶</a></dt>
+<code class="descname">duty_cycle_sp</code><a class="headerlink" href="#ev3dev.motor.duty_cycle_sp" title="Permalink to this definition">¶</a></dt>
 <dd><p>Duty Cycle SP: read/write</p>
 <p>Writing sets the duty cycle setpoint. Reading returns the current value.
 Units are in percent. Valid values are -100 to 100. A negative value causes
@@ -353,7 +356,7 @@ is off.</p>
 
 <dl class="attribute">
 <dt id="ev3dev.motor.encoder_polarity">
-<tt class="descname">encoder_polarity</tt><a class="headerlink" href="#ev3dev.motor.encoder_polarity" title="Permalink to this definition">¶</a></dt>
+<code class="descname">encoder_polarity</code><a class="headerlink" href="#ev3dev.motor.encoder_polarity" title="Permalink to this definition">¶</a></dt>
 <dd><p>Encoder Polarity: read/write</p>
 <p>Sets the polarity of the rotary encoder. This is an advanced feature to all
 use of motors that send inverted encoder signals to the EV3. This should
@@ -364,7 +367,7 @@ value if you are using a unsupported device. Valid values are <cite>normal</cite
 
 <dl class="attribute">
 <dt id="ev3dev.motor.polarity">
-<tt class="descname">polarity</tt><a class="headerlink" href="#ev3dev.motor.polarity" title="Permalink to this definition">¶</a></dt>
+<code class="descname">polarity</code><a class="headerlink" href="#ev3dev.motor.polarity" title="Permalink to this definition">¶</a></dt>
 <dd><p>Polarity: read/write</p>
 <p>Sets the polarity of the motor. With <cite>normal</cite> polarity, a positive duty
 cycle will cause the motor to rotate clockwise. With <cite>inverted</cite> polarity,
@@ -374,14 +377,14 @@ Valid values are <cite>normal</cite> and <cite>inverted</cite>.</p>
 
 <dl class="attribute">
 <dt id="ev3dev.motor.port_name">
-<tt class="descname">port_name</tt><a class="headerlink" href="#ev3dev.motor.port_name" title="Permalink to this definition">¶</a></dt>
+<code class="descname">port_name</code><a class="headerlink" href="#ev3dev.motor.port_name" title="Permalink to this definition">¶</a></dt>
 <dd><p>Port Name: read-only</p>
 <p>Returns the name of the port that the motor is connected to.</p>
 </dd></dl>
 
 <dl class="attribute">
 <dt id="ev3dev.motor.position">
-<tt class="descname">position</tt><a class="headerlink" href="#ev3dev.motor.position" title="Permalink to this definition">¶</a></dt>
+<code class="descname">position</code><a class="headerlink" href="#ev3dev.motor.position" title="Permalink to this definition">¶</a></dt>
 <dd><p>Position: read/write</p>
 <p>Returns the current position of the motor in pulses of the rotary
 encoder. When the motor rotates clockwise, the position will increase.
@@ -391,28 +394,28 @@ Writing will set the position to that value.</p>
 
 <dl class="attribute">
 <dt id="ev3dev.motor.position_d">
-<tt class="descname">position_d</tt><a class="headerlink" href="#ev3dev.motor.position_d" title="Permalink to this definition">¶</a></dt>
+<code class="descname">position_d</code><a class="headerlink" href="#ev3dev.motor.position_d" title="Permalink to this definition">¶</a></dt>
 <dd><p>Position D: read/write</p>
 <p>The derivative constant for the position PID.</p>
 </dd></dl>
 
 <dl class="attribute">
 <dt id="ev3dev.motor.position_i">
-<tt class="descname">position_i</tt><a class="headerlink" href="#ev3dev.motor.position_i" title="Permalink to this definition">¶</a></dt>
+<code class="descname">position_i</code><a class="headerlink" href="#ev3dev.motor.position_i" title="Permalink to this definition">¶</a></dt>
 <dd><p>Position I: read/write</p>
 <p>The integral constant for the position PID.</p>
 </dd></dl>
 
 <dl class="attribute">
 <dt id="ev3dev.motor.position_p">
-<tt class="descname">position_p</tt><a class="headerlink" href="#ev3dev.motor.position_p" title="Permalink to this definition">¶</a></dt>
+<code class="descname">position_p</code><a class="headerlink" href="#ev3dev.motor.position_p" title="Permalink to this definition">¶</a></dt>
 <dd><p>Position P: read/write</p>
 <p>The proportional constant for the position PID.</p>
 </dd></dl>
 
 <dl class="attribute">
 <dt id="ev3dev.motor.position_sp">
-<tt class="descname">position_sp</tt><a class="headerlink" href="#ev3dev.motor.position_sp" title="Permalink to this definition">¶</a></dt>
+<code class="descname">position_sp</code><a class="headerlink" href="#ev3dev.motor.position_sp" title="Permalink to this definition">¶</a></dt>
 <dd><p>Position SP: read/write</p>
 <p>Writing specifies the target position for the <cite>run-to-abs-pos</cite> and <cite>run-to-rel-pos</cite>
 commands. Reading returns the current value. Units are in tacho counts. You
@@ -422,7 +425,7 @@ rotations or degrees.</p>
 
 <dl class="attribute">
 <dt id="ev3dev.motor.ramp_down_sp">
-<tt class="descname">ramp_down_sp</tt><a class="headerlink" href="#ev3dev.motor.ramp_down_sp" title="Permalink to this definition">¶</a></dt>
+<code class="descname">ramp_down_sp</code><a class="headerlink" href="#ev3dev.motor.ramp_down_sp" title="Permalink to this definition">¶</a></dt>
 <dd><p>Ramp Down SP: read/write</p>
 <p>Writing sets the ramp down setpoint. Reading returns the current value. Units
 are in milliseconds. When set to a value &gt; 0, the motor will ramp the power
@@ -433,7 +436,7 @@ ramp time duration will be less than the full span of the setpoint.</p>
 
 <dl class="attribute">
 <dt id="ev3dev.motor.ramp_up_sp">
-<tt class="descname">ramp_up_sp</tt><a class="headerlink" href="#ev3dev.motor.ramp_up_sp" title="Permalink to this definition">¶</a></dt>
+<code class="descname">ramp_up_sp</code><a class="headerlink" href="#ev3dev.motor.ramp_up_sp" title="Permalink to this definition">¶</a></dt>
 <dd><p>Ramp Up SP: read/write</p>
 <p>Writing sets the ramp up setpoint. Reading returns the current value. Units
 are in milliseconds. When set to a value &gt; 0, the motor will ramp the power
@@ -444,14 +447,14 @@ or speed regulation, the actual ramp time duration will be less than the setpoin
 
 <dl class="method">
 <dt id="ev3dev.motor.reset">
-<tt class="descname">reset</tt><big>(</big><em>**attr</em><big>)</big><a class="headerlink" href="#ev3dev.motor.reset" title="Permalink to this definition">¶</a></dt>
+<code class="descname">reset</code><span class="sig-paren">(</span><em>**attr</em><span class="sig-paren">)</span><a class="headerlink" href="#ev3dev.motor.reset" title="Permalink to this definition">¶</a></dt>
 <dd><p>Reset all of the motor parameter attributes to their default value.
 This will also have the effect of stopping the motor.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="ev3dev.motor.run_direct">
-<tt class="descname">run_direct</tt><big>(</big><em>**attr</em><big>)</big><a class="headerlink" href="#ev3dev.motor.run_direct" title="Permalink to this definition">¶</a></dt>
+<code class="descname">run_direct</code><span class="sig-paren">(</span><em>**attr</em><span class="sig-paren">)</span><a class="headerlink" href="#ev3dev.motor.run_direct" title="Permalink to this definition">¶</a></dt>
 <dd><p>Run the motor at the duty cycle specified by <cite>duty_cycle_sp</cite>.
 Unlike other run commands, changing <cite>duty_cycle_sp</cite> while running <em>will</em>
 take effect immediately.</p>
@@ -459,27 +462,27 @@ take effect immediately.</p>
 
 <dl class="method">
 <dt id="ev3dev.motor.run_forever">
-<tt class="descname">run_forever</tt><big>(</big><em>**attr</em><big>)</big><a class="headerlink" href="#ev3dev.motor.run_forever" title="Permalink to this definition">¶</a></dt>
+<code class="descname">run_forever</code><span class="sig-paren">(</span><em>**attr</em><span class="sig-paren">)</span><a class="headerlink" href="#ev3dev.motor.run_forever" title="Permalink to this definition">¶</a></dt>
 <dd><p>Run the motor until another command is sent.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="ev3dev.motor.run_timed">
-<tt class="descname">run_timed</tt><big>(</big><em>**attr</em><big>)</big><a class="headerlink" href="#ev3dev.motor.run_timed" title="Permalink to this definition">¶</a></dt>
+<code class="descname">run_timed</code><span class="sig-paren">(</span><em>**attr</em><span class="sig-paren">)</span><a class="headerlink" href="#ev3dev.motor.run_timed" title="Permalink to this definition">¶</a></dt>
 <dd><p>Run the motor for the amount of time specified in <cite>time_sp</cite>
 and then stop the motor using the command specified by <cite>stop_command</cite>.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="ev3dev.motor.run_to_abs_pos">
-<tt class="descname">run_to_abs_pos</tt><big>(</big><em>**attr</em><big>)</big><a class="headerlink" href="#ev3dev.motor.run_to_abs_pos" title="Permalink to this definition">¶</a></dt>
+<code class="descname">run_to_abs_pos</code><span class="sig-paren">(</span><em>**attr</em><span class="sig-paren">)</span><a class="headerlink" href="#ev3dev.motor.run_to_abs_pos" title="Permalink to this definition">¶</a></dt>
 <dd><p>Run to an absolute position specified by <cite>position_sp</cite> and then
 stop using the command specified in <cite>stop_command</cite>.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="ev3dev.motor.run_to_rel_pos">
-<tt class="descname">run_to_rel_pos</tt><big>(</big><em>**attr</em><big>)</big><a class="headerlink" href="#ev3dev.motor.run_to_rel_pos" title="Permalink to this definition">¶</a></dt>
+<code class="descname">run_to_rel_pos</code><span class="sig-paren">(</span><em>**attr</em><span class="sig-paren">)</span><a class="headerlink" href="#ev3dev.motor.run_to_rel_pos" title="Permalink to this definition">¶</a></dt>
 <dd><p>Run to a position relative to the current <cite>position</cite> value.
 The new position will be current <cite>position</cite> + <cite>position_sp</cite>.
 When the new position is reached, the motor will stop using
@@ -488,7 +491,7 @@ the command specified by <cite>stop_command</cite>.</p>
 
 <dl class="method">
 <dt id="ev3dev.motor.set">
-<tt class="descname">set</tt><big>(</big><em>device</em>, <em>**attr</em><big>)</big><a class="headerlink" href="#ev3dev.motor.set" title="Permalink to this definition">¶</a></dt>
+<code class="descname">set</code><span class="sig-paren">(</span><em>device</em>, <em>**attr</em><span class="sig-paren">)</span><a class="headerlink" href="#ev3dev.motor.set" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set device attributes provided as keyword arguments</p>
 <p>Example:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">motor</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">speed_regulation_enabled</span><span class="o">=</span><span class="s">&#39;on&#39;</span><span class="p">,</span> <span class="n">stop_command</span><span class="o">=</span><span class="s">&#39;brake&#39;</span><span class="p">)</span>
@@ -498,7 +501,7 @@ the command specified by <cite>stop_command</cite>.</p>
 
 <dl class="attribute">
 <dt id="ev3dev.motor.speed">
-<tt class="descname">speed</tt><a class="headerlink" href="#ev3dev.motor.speed" title="Permalink to this definition">¶</a></dt>
+<code class="descname">speed</code><a class="headerlink" href="#ev3dev.motor.speed" title="Permalink to this definition">¶</a></dt>
 <dd><p>Speed: read-only</p>
 <p>Returns the current motor speed in tacho counts per second. Not, this is
 not necessarily degrees (although it is for LEGO motors). Use the <cite>count_per_rot</cite>
@@ -507,14 +510,14 @@ attribute to convert this value to RPM or deg/sec.</p>
 
 <dl class="attribute">
 <dt id="ev3dev.motor.speed_regulation_d">
-<tt class="descname">speed_regulation_d</tt><a class="headerlink" href="#ev3dev.motor.speed_regulation_d" title="Permalink to this definition">¶</a></dt>
+<code class="descname">speed_regulation_d</code><a class="headerlink" href="#ev3dev.motor.speed_regulation_d" title="Permalink to this definition">¶</a></dt>
 <dd><p>Speed Regulation D: read/write</p>
 <p>The derivative constant for the speed regulation PID.</p>
 </dd></dl>
 
 <dl class="attribute">
 <dt id="ev3dev.motor.speed_regulation_enabled">
-<tt class="descname">speed_regulation_enabled</tt><a class="headerlink" href="#ev3dev.motor.speed_regulation_enabled" title="Permalink to this definition">¶</a></dt>
+<code class="descname">speed_regulation_enabled</code><a class="headerlink" href="#ev3dev.motor.speed_regulation_enabled" title="Permalink to this definition">¶</a></dt>
 <dd><p>Speed Regulation Enabled: read/write</p>
 <p>Turns speed regulation on or off. If speed regulation is on, the motor
 controller will vary the power supplied to the motor to try to maintain the
@@ -525,21 +528,21 @@ will use the power specified in <cite>duty_cycle_sp</cite>. Valid values are <ci
 
 <dl class="attribute">
 <dt id="ev3dev.motor.speed_regulation_i">
-<tt class="descname">speed_regulation_i</tt><a class="headerlink" href="#ev3dev.motor.speed_regulation_i" title="Permalink to this definition">¶</a></dt>
+<code class="descname">speed_regulation_i</code><a class="headerlink" href="#ev3dev.motor.speed_regulation_i" title="Permalink to this definition">¶</a></dt>
 <dd><p>Speed Regulation I: read/write</p>
 <p>The integral constant for the speed regulation PID.</p>
 </dd></dl>
 
 <dl class="attribute">
 <dt id="ev3dev.motor.speed_regulation_p">
-<tt class="descname">speed_regulation_p</tt><a class="headerlink" href="#ev3dev.motor.speed_regulation_p" title="Permalink to this definition">¶</a></dt>
+<code class="descname">speed_regulation_p</code><a class="headerlink" href="#ev3dev.motor.speed_regulation_p" title="Permalink to this definition">¶</a></dt>
 <dd><p>Speed Regulation P: read/write</p>
 <p>The proportional constant for the speed regulation PID.</p>
 </dd></dl>
 
 <dl class="attribute">
 <dt id="ev3dev.motor.speed_sp">
-<tt class="descname">speed_sp</tt><a class="headerlink" href="#ev3dev.motor.speed_sp" title="Permalink to this definition">¶</a></dt>
+<code class="descname">speed_sp</code><a class="headerlink" href="#ev3dev.motor.speed_sp" title="Permalink to this definition">¶</a></dt>
 <dd><p>Speed SP: read/write</p>
 <p>Writing sets the target speed in tacho counts per second used when <cite>speed_regulation</cite>
 is on. Reading returns the current value.  Use the <cite>count_per_rot</cite> attribute
@@ -548,7 +551,7 @@ to convert RPM or deg/sec to tacho counts per second.</p>
 
 <dl class="attribute">
 <dt id="ev3dev.motor.state">
-<tt class="descname">state</tt><a class="headerlink" href="#ev3dev.motor.state" title="Permalink to this definition">¶</a></dt>
+<code class="descname">state</code><a class="headerlink" href="#ev3dev.motor.state" title="Permalink to this definition">¶</a></dt>
 <dd><p>State: read-only</p>
 <p>Reading returns a space separated list of state flags. Possible flags are
 <cite>running</cite>, <cite>ramping</cite> <cite>holding</cite> and <cite>stalled</cite>.</p>
@@ -556,14 +559,14 @@ to convert RPM or deg/sec to tacho counts per second.</p>
 
 <dl class="method">
 <dt id="ev3dev.motor.stop">
-<tt class="descname">stop</tt><big>(</big><em>**attr</em><big>)</big><a class="headerlink" href="#ev3dev.motor.stop" title="Permalink to this definition">¶</a></dt>
+<code class="descname">stop</code><span class="sig-paren">(</span><em>**attr</em><span class="sig-paren">)</span><a class="headerlink" href="#ev3dev.motor.stop" title="Permalink to this definition">¶</a></dt>
 <dd><p>Stop any of the run commands before they are complete using the
 command specified by <cite>stop_command</cite>.</p>
 </dd></dl>
 
 <dl class="attribute">
 <dt id="ev3dev.motor.stop_command">
-<tt class="descname">stop_command</tt><a class="headerlink" href="#ev3dev.motor.stop_command" title="Permalink to this definition">¶</a></dt>
+<code class="descname">stop_command</code><a class="headerlink" href="#ev3dev.motor.stop_command" title="Permalink to this definition">¶</a></dt>
 <dd><p>Stop Command: read/write</p>
 <p>Reading returns the current stop command. Writing sets the stop command.
 The value determines the motors behavior when <cite>command</cite> is set to <cite>stop</cite>.
@@ -573,7 +576,7 @@ Also, it determines the motors behavior when a run command completes. See
 
 <dl class="attribute">
 <dt id="ev3dev.motor.stop_commands">
-<tt class="descname">stop_commands</tt><a class="headerlink" href="#ev3dev.motor.stop_commands" title="Permalink to this definition">¶</a></dt>
+<code class="descname">stop_commands</code><a class="headerlink" href="#ev3dev.motor.stop_commands" title="Permalink to this definition">¶</a></dt>
 <dd><p>Stop Commands: read-only</p>
 <p>Returns a space-separated list of stop modes supported by the motor controller.
 Possible values are <cite>coast</cite>, <cite>brake</cite> and <cite>hold</cite>. <cite>coast</cite> means that power will
@@ -589,7 +592,7 @@ back&#8217; to maintain its position.</p>
 
 <dl class="attribute">
 <dt id="ev3dev.motor.time_sp">
-<tt class="descname">time_sp</tt><a class="headerlink" href="#ev3dev.motor.time_sp" title="Permalink to this definition">¶</a></dt>
+<code class="descname">time_sp</code><a class="headerlink" href="#ev3dev.motor.time_sp" title="Permalink to this definition">¶</a></dt>
 <dd><p>Time SP: read/write</p>
 <p>Writing specifies the amount of time the motor will run when using the
 <cite>run-timed</cite> command. Reading returns the current value. Units are in
@@ -600,27 +603,27 @@ milliseconds.</p>
 
 <dl class="class">
 <dt id="ev3dev.medium_motor">
-<em class="property">class </em><tt class="descclassname">ev3dev.</tt><tt class="descname">medium_motor</tt><big>(</big><em>(object)arg1</em><big>)</big><a class="headerlink" href="#ev3dev.medium_motor" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <tt class="xref py py-class docutils literal"><span class="pre">ev3dev_ext.motor</span></tt></p>
+<em class="property">class </em><code class="descclassname">ev3dev.</code><code class="descname">medium_motor</code><a class="headerlink" href="#ev3dev.medium_motor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">ev3dev_ext.motor</span></code></p>
 <p>EV3 medium motor</p>
 </dd></dl>
 
 <dl class="class">
 <dt id="ev3dev.large_motor">
-<em class="property">class </em><tt class="descclassname">ev3dev.</tt><tt class="descname">large_motor</tt><big>(</big><em>(object)arg1</em><big>)</big><a class="headerlink" href="#ev3dev.large_motor" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <tt class="xref py py-class docutils literal"><span class="pre">ev3dev_ext.motor</span></tt></p>
+<em class="property">class </em><code class="descclassname">ev3dev.</code><code class="descname">large_motor</code><a class="headerlink" href="#ev3dev.large_motor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">ev3dev_ext.motor</span></code></p>
 <p>EV3 large motor</p>
 </dd></dl>
 
 <dl class="class">
 <dt id="ev3dev.dc_motor">
-<em class="property">class </em><tt class="descclassname">ev3dev.</tt><tt class="descname">dc_motor</tt><big>(</big><em>(object)arg1</em><big>)</big><a class="headerlink" href="#ev3dev.dc_motor" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">ev3dev.</code><code class="descname">dc_motor</code><a class="headerlink" href="#ev3dev.dc_motor" title="Permalink to this definition">¶</a></dt>
 <dd><p>The DC motor class provides a uniform interface for using regular DC motors
 with no fancy controls or feedback. This includes LEGO MINDSTORMS RCX motors
 and LEGO Power Functions motors.</p>
 <dl class="attribute">
 <dt id="ev3dev.dc_motor.command">
-<tt class="descname">command</tt><a class="headerlink" href="#ev3dev.dc_motor.command" title="Permalink to this definition">¶</a></dt>
+<code class="descname">command</code><a class="headerlink" href="#ev3dev.dc_motor.command" title="Permalink to this definition">¶</a></dt>
 <dd><p>Command: write-only</p>
 <p>Sets the command for the motor. Possible values are <cite>run-forever</cite>, <cite>run-timed</cite> and
 <cite>stop</cite>. Not all commands may be supported, so be sure to check the contents
@@ -629,7 +632,7 @@ of the <cite>commands</cite> attribute.</p>
 
 <dl class="attribute">
 <dt id="ev3dev.dc_motor.commands">
-<tt class="descname">commands</tt><a class="headerlink" href="#ev3dev.dc_motor.commands" title="Permalink to this definition">¶</a></dt>
+<code class="descname">commands</code><a class="headerlink" href="#ev3dev.dc_motor.commands" title="Permalink to this definition">¶</a></dt>
 <dd><p>Commands: read-only</p>
 <p>Returns a space separated list of commands supported by the motor
 controller.</p>
@@ -637,7 +640,7 @@ controller.</p>
 
 <dl class="attribute">
 <dt id="ev3dev.dc_motor.driver_name">
-<tt class="descname">driver_name</tt><a class="headerlink" href="#ev3dev.dc_motor.driver_name" title="Permalink to this definition">¶</a></dt>
+<code class="descname">driver_name</code><a class="headerlink" href="#ev3dev.dc_motor.driver_name" title="Permalink to this definition">¶</a></dt>
 <dd><p>Driver Name: read-only</p>
 <p>Returns the name of the motor driver that loaded this device. See the list
 of [supported devices] for a list of drivers.</p>
@@ -645,7 +648,7 @@ of [supported devices] for a list of drivers.</p>
 
 <dl class="attribute">
 <dt id="ev3dev.dc_motor.duty_cycle">
-<tt class="descname">duty_cycle</tt><a class="headerlink" href="#ev3dev.dc_motor.duty_cycle" title="Permalink to this definition">¶</a></dt>
+<code class="descname">duty_cycle</code><a class="headerlink" href="#ev3dev.dc_motor.duty_cycle" title="Permalink to this definition">¶</a></dt>
 <dd><p>Duty Cycle: read-only</p>
 <p>Shows the current duty cycle of the PWM signal sent to the motor. Values
 are -100 to 100 (-100% to 100%).</p>
@@ -653,7 +656,7 @@ are -100 to 100 (-100% to 100%).</p>
 
 <dl class="attribute">
 <dt id="ev3dev.dc_motor.duty_cycle_sp">
-<tt class="descname">duty_cycle_sp</tt><a class="headerlink" href="#ev3dev.dc_motor.duty_cycle_sp" title="Permalink to this definition">¶</a></dt>
+<code class="descname">duty_cycle_sp</code><a class="headerlink" href="#ev3dev.dc_motor.duty_cycle_sp" title="Permalink to this definition">¶</a></dt>
 <dd><p>Duty Cycle SP: read/write</p>
 <p>Writing sets the duty cycle setpoint of the PWM signal sent to the motor.
 Valid values are -100 to 100 (-100% to 100%). Reading returns the current
@@ -662,21 +665,21 @@ setpoint.</p>
 
 <dl class="attribute">
 <dt id="ev3dev.dc_motor.polarity">
-<tt class="descname">polarity</tt><a class="headerlink" href="#ev3dev.dc_motor.polarity" title="Permalink to this definition">¶</a></dt>
+<code class="descname">polarity</code><a class="headerlink" href="#ev3dev.dc_motor.polarity" title="Permalink to this definition">¶</a></dt>
 <dd><p>Polarity: read/write</p>
 <p>Sets the polarity of the motor. Valid values are <cite>normal</cite> and <cite>inverted</cite>.</p>
 </dd></dl>
 
 <dl class="attribute">
 <dt id="ev3dev.dc_motor.port_name">
-<tt class="descname">port_name</tt><a class="headerlink" href="#ev3dev.dc_motor.port_name" title="Permalink to this definition">¶</a></dt>
+<code class="descname">port_name</code><a class="headerlink" href="#ev3dev.dc_motor.port_name" title="Permalink to this definition">¶</a></dt>
 <dd><p>Port Name: read-only</p>
 <p>Returns the name of the port that the motor is connected to.</p>
 </dd></dl>
 
 <dl class="attribute">
 <dt id="ev3dev.dc_motor.ramp_down_sp">
-<tt class="descname">ramp_down_sp</tt><a class="headerlink" href="#ev3dev.dc_motor.ramp_down_sp" title="Permalink to this definition">¶</a></dt>
+<code class="descname">ramp_down_sp</code><a class="headerlink" href="#ev3dev.dc_motor.ramp_down_sp" title="Permalink to this definition">¶</a></dt>
 <dd><p>Ramp Down SP: read/write</p>
 <p>Sets the time in milliseconds that it take the motor to ramp down from 100%
 to 0%. Valid values are 0 to 10000 (10 seconds). Default is 0.</p>
@@ -684,7 +687,7 @@ to 0%. Valid values are 0 to 10000 (10 seconds). Default is 0.</p>
 
 <dl class="attribute">
 <dt id="ev3dev.dc_motor.ramp_up_sp">
-<tt class="descname">ramp_up_sp</tt><a class="headerlink" href="#ev3dev.dc_motor.ramp_up_sp" title="Permalink to this definition">¶</a></dt>
+<code class="descname">ramp_up_sp</code><a class="headerlink" href="#ev3dev.dc_motor.ramp_up_sp" title="Permalink to this definition">¶</a></dt>
 <dd><p>Ramp Up SP: read/write</p>
 <p>Sets the time in milliseconds that it take the motor to up ramp from 0% to
 100%. Valid values are 0 to 10000 (10 seconds). Default is 0.</p>
@@ -692,20 +695,20 @@ to 0%. Valid values are 0 to 10000 (10 seconds). Default is 0.</p>
 
 <dl class="method">
 <dt id="ev3dev.dc_motor.run_forever">
-<tt class="descname">run_forever</tt><big>(</big><em>**attr</em><big>)</big><a class="headerlink" href="#ev3dev.dc_motor.run_forever" title="Permalink to this definition">¶</a></dt>
+<code class="descname">run_forever</code><span class="sig-paren">(</span><em>**attr</em><span class="sig-paren">)</span><a class="headerlink" href="#ev3dev.dc_motor.run_forever" title="Permalink to this definition">¶</a></dt>
 <dd><p>Run the motor until another command is sent.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="ev3dev.dc_motor.run_timed">
-<tt class="descname">run_timed</tt><big>(</big><em>**attr</em><big>)</big><a class="headerlink" href="#ev3dev.dc_motor.run_timed" title="Permalink to this definition">¶</a></dt>
+<code class="descname">run_timed</code><span class="sig-paren">(</span><em>**attr</em><span class="sig-paren">)</span><a class="headerlink" href="#ev3dev.dc_motor.run_timed" title="Permalink to this definition">¶</a></dt>
 <dd><p>Run the motor for the amount of time specified in <cite>time_sp</cite>
 and then stop the motor using the command specified by <cite>stop_command</cite>.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="ev3dev.dc_motor.set">
-<tt class="descname">set</tt><big>(</big><em>device</em>, <em>**attr</em><big>)</big><a class="headerlink" href="#ev3dev.dc_motor.set" title="Permalink to this definition">¶</a></dt>
+<code class="descname">set</code><span class="sig-paren">(</span><em>device</em>, <em>**attr</em><span class="sig-paren">)</span><a class="headerlink" href="#ev3dev.dc_motor.set" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set device attributes provided as keyword arguments</p>
 <p>Example:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">motor</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">speed_regulation_enabled</span><span class="o">=</span><span class="s">&#39;on&#39;</span><span class="p">,</span> <span class="n">stop_command</span><span class="o">=</span><span class="s">&#39;brake&#39;</span><span class="p">)</span>
@@ -715,7 +718,7 @@ and then stop the motor using the command specified by <cite>stop_command</cite>
 
 <dl class="attribute">
 <dt id="ev3dev.dc_motor.state">
-<tt class="descname">state</tt><a class="headerlink" href="#ev3dev.dc_motor.state" title="Permalink to this definition">¶</a></dt>
+<code class="descname">state</code><a class="headerlink" href="#ev3dev.dc_motor.state" title="Permalink to this definition">¶</a></dt>
 <dd><p>State: read-only</p>
 <p>Gets a space separated list of flags indicating the motor status. Possible
 flags are <cite>running</cite> and <cite>ramping</cite>. <cite>running</cite> indicates that the motor is
@@ -725,14 +728,14 @@ powered. <cite>ramping</cite> indicates that the motor has not yet reached the
 
 <dl class="method">
 <dt id="ev3dev.dc_motor.stop">
-<tt class="descname">stop</tt><big>(</big><em>**attr</em><big>)</big><a class="headerlink" href="#ev3dev.dc_motor.stop" title="Permalink to this definition">¶</a></dt>
+<code class="descname">stop</code><span class="sig-paren">(</span><em>**attr</em><span class="sig-paren">)</span><a class="headerlink" href="#ev3dev.dc_motor.stop" title="Permalink to this definition">¶</a></dt>
 <dd><p>Stop any of the run commands before they are complete using the
 command specified by <cite>stop_command</cite>.</p>
 </dd></dl>
 
 <dl class="attribute">
 <dt id="ev3dev.dc_motor.stop_command">
-<tt class="descname">stop_command</tt><a class="headerlink" href="#ev3dev.dc_motor.stop_command" title="Permalink to this definition">¶</a></dt>
+<code class="descname">stop_command</code><a class="headerlink" href="#ev3dev.dc_motor.stop_command" title="Permalink to this definition">¶</a></dt>
 <dd><p>Stop Command: write-only</p>
 <p>Sets the stop command that will be used when the motor stops. Read
 <cite>stop_commands</cite> to get the list of valid values.</p>
@@ -740,7 +743,7 @@ command specified by <cite>stop_command</cite>.</p>
 
 <dl class="attribute">
 <dt id="ev3dev.dc_motor.stop_commands">
-<tt class="descname">stop_commands</tt><a class="headerlink" href="#ev3dev.dc_motor.stop_commands" title="Permalink to this definition">¶</a></dt>
+<code class="descname">stop_commands</code><a class="headerlink" href="#ev3dev.dc_motor.stop_commands" title="Permalink to this definition">¶</a></dt>
 <dd><p>Stop Commands: read-only</p>
 <p>Gets a space separated list of stop commands. Valid values are <cite>coast</cite>
 and <cite>brake</cite>.</p>
@@ -750,12 +753,12 @@ and <cite>brake</cite>.</p>
 
 <dl class="class">
 <dt id="ev3dev.servo_motor">
-<em class="property">class </em><tt class="descclassname">ev3dev.</tt><tt class="descname">servo_motor</tt><big>(</big><em>(object)arg1</em><big>)</big><a class="headerlink" href="#ev3dev.servo_motor" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">ev3dev.</code><code class="descname">servo_motor</code><a class="headerlink" href="#ev3dev.servo_motor" title="Permalink to this definition">¶</a></dt>
 <dd><p>The servo motor class provides a uniform interface for using hobby type
 servo motors.</p>
 <dl class="attribute">
 <dt id="ev3dev.servo_motor.command">
-<tt class="descname">command</tt><a class="headerlink" href="#ev3dev.servo_motor.command" title="Permalink to this definition">¶</a></dt>
+<code class="descname">command</code><a class="headerlink" href="#ev3dev.servo_motor.command" title="Permalink to this definition">¶</a></dt>
 <dd><p>Command: write-only</p>
 <p>Sets the command for the servo. Valid values are <cite>run</cite> and <cite>float</cite>. Setting
 to <cite>run</cite> will cause the servo to be driven to the position_sp set in the
@@ -764,7 +767,7 @@ to <cite>run</cite> will cause the servo to be driven to the position_sp set in 
 
 <dl class="attribute">
 <dt id="ev3dev.servo_motor.driver_name">
-<tt class="descname">driver_name</tt><a class="headerlink" href="#ev3dev.servo_motor.driver_name" title="Permalink to this definition">¶</a></dt>
+<code class="descname">driver_name</code><a class="headerlink" href="#ev3dev.servo_motor.driver_name" title="Permalink to this definition">¶</a></dt>
 <dd><p>Driver Name: read-only</p>
 <p>Returns the name of the motor driver that loaded this device. See the list
 of [supported devices] for a list of drivers.</p>
@@ -772,13 +775,13 @@ of [supported devices] for a list of drivers.</p>
 
 <dl class="method">
 <dt id="ev3dev.servo_motor.float">
-<tt class="descname">float</tt><big>(</big><em>**attr</em><big>)</big><a class="headerlink" href="#ev3dev.servo_motor.float" title="Permalink to this definition">¶</a></dt>
+<code class="descname">float</code><span class="sig-paren">(</span><em>**attr</em><span class="sig-paren">)</span><a class="headerlink" href="#ev3dev.servo_motor.float" title="Permalink to this definition">¶</a></dt>
 <dd><p>Remove power from the motor.</p>
 </dd></dl>
 
 <dl class="attribute">
 <dt id="ev3dev.servo_motor.max_pulse_sp">
-<tt class="descname">max_pulse_sp</tt><a class="headerlink" href="#ev3dev.servo_motor.max_pulse_sp" title="Permalink to this definition">¶</a></dt>
+<code class="descname">max_pulse_sp</code><a class="headerlink" href="#ev3dev.servo_motor.max_pulse_sp" title="Permalink to this definition">¶</a></dt>
 <dd><p>Max Pulse SP: read/write</p>
 <p>Used to set the pulse size in milliseconds for the signal that tells the
 servo to drive to the maximum (clockwise) position_sp. Default value is 2400.
@@ -788,7 +791,7 @@ changes to this attribute to take effect.</p>
 
 <dl class="attribute">
 <dt id="ev3dev.servo_motor.mid_pulse_sp">
-<tt class="descname">mid_pulse_sp</tt><a class="headerlink" href="#ev3dev.servo_motor.mid_pulse_sp" title="Permalink to this definition">¶</a></dt>
+<code class="descname">mid_pulse_sp</code><a class="headerlink" href="#ev3dev.servo_motor.mid_pulse_sp" title="Permalink to this definition">¶</a></dt>
 <dd><p>Mid Pulse SP: read/write</p>
 <p>Used to set the pulse size in milliseconds for the signal that tells the
 servo to drive to the mid position_sp. Default value is 1500. Valid
@@ -800,7 +803,7 @@ changes to this attribute to take effect.</p>
 
 <dl class="attribute">
 <dt id="ev3dev.servo_motor.min_pulse_sp">
-<tt class="descname">min_pulse_sp</tt><a class="headerlink" href="#ev3dev.servo_motor.min_pulse_sp" title="Permalink to this definition">¶</a></dt>
+<code class="descname">min_pulse_sp</code><a class="headerlink" href="#ev3dev.servo_motor.min_pulse_sp" title="Permalink to this definition">¶</a></dt>
 <dd><p>Min Pulse SP: read/write</p>
 <p>Used to set the pulse size in milliseconds for the signal that tells the
 servo to drive to the miniumum (counter-clockwise) position_sp. Default value
@@ -810,7 +813,7 @@ attribute for changes to this attribute to take effect.</p>
 
 <dl class="attribute">
 <dt id="ev3dev.servo_motor.polarity">
-<tt class="descname">polarity</tt><a class="headerlink" href="#ev3dev.servo_motor.polarity" title="Permalink to this definition">¶</a></dt>
+<code class="descname">polarity</code><a class="headerlink" href="#ev3dev.servo_motor.polarity" title="Permalink to this definition">¶</a></dt>
 <dd><p>Polarity: read/write</p>
 <p>Sets the polarity of the servo. Valid values are <cite>normal</cite> and <cite>inverted</cite>.
 Setting the value to <cite>inverted</cite> will cause the position_sp value to be
@@ -820,14 +823,14 @@ correspond to <cite>min_pulse_sp</cite>.</p>
 
 <dl class="attribute">
 <dt id="ev3dev.servo_motor.port_name">
-<tt class="descname">port_name</tt><a class="headerlink" href="#ev3dev.servo_motor.port_name" title="Permalink to this definition">¶</a></dt>
+<code class="descname">port_name</code><a class="headerlink" href="#ev3dev.servo_motor.port_name" title="Permalink to this definition">¶</a></dt>
 <dd><p>Port Name: read-only</p>
 <p>Returns the name of the port that the motor is connected to.</p>
 </dd></dl>
 
 <dl class="attribute">
 <dt id="ev3dev.servo_motor.position_sp">
-<tt class="descname">position_sp</tt><a class="headerlink" href="#ev3dev.servo_motor.position_sp" title="Permalink to this definition">¶</a></dt>
+<code class="descname">position_sp</code><a class="headerlink" href="#ev3dev.servo_motor.position_sp" title="Permalink to this definition">¶</a></dt>
 <dd><p>Position SP: read/write</p>
 <p>Reading returns the current position_sp of the servo. Writing instructs the
 servo to move to the specified position_sp. Units are percent. Valid values
@@ -837,7 +840,7 @@ are -100 to 100 (-100% to 100%) where <cite>-100</cite> corresponds to <cite>min
 
 <dl class="attribute">
 <dt id="ev3dev.servo_motor.rate_sp">
-<tt class="descname">rate_sp</tt><a class="headerlink" href="#ev3dev.servo_motor.rate_sp" title="Permalink to this definition">¶</a></dt>
+<code class="descname">rate_sp</code><a class="headerlink" href="#ev3dev.servo_motor.rate_sp" title="Permalink to this definition">¶</a></dt>
 <dd><p>Rate SP: read/write</p>
 <p>Sets the rate_sp at which the servo travels from 0 to 100.0% (half of the full
 range of the servo). Units are in milliseconds. Example: Setting the rate_sp
@@ -849,13 +852,13 @@ servos, this value will affect the rate_sp at which the speed ramps up or down.<
 
 <dl class="method">
 <dt id="ev3dev.servo_motor.run">
-<tt class="descname">run</tt><big>(</big><em>**attr</em><big>)</big><a class="headerlink" href="#ev3dev.servo_motor.run" title="Permalink to this definition">¶</a></dt>
+<code class="descname">run</code><span class="sig-paren">(</span><em>**attr</em><span class="sig-paren">)</span><a class="headerlink" href="#ev3dev.servo_motor.run" title="Permalink to this definition">¶</a></dt>
 <dd><p>Drive servo to the position set in the <cite>position_sp</cite> attribute.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="ev3dev.servo_motor.set">
-<tt class="descname">set</tt><big>(</big><em>device</em>, <em>**attr</em><big>)</big><a class="headerlink" href="#ev3dev.servo_motor.set" title="Permalink to this definition">¶</a></dt>
+<code class="descname">set</code><span class="sig-paren">(</span><em>device</em>, <em>**attr</em><span class="sig-paren">)</span><a class="headerlink" href="#ev3dev.servo_motor.set" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set device attributes provided as keyword arguments</p>
 <p>Example:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">motor</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">speed_regulation_enabled</span><span class="o">=</span><span class="s">&#39;on&#39;</span><span class="p">,</span> <span class="n">stop_command</span><span class="o">=</span><span class="s">&#39;brake&#39;</span><span class="p">)</span>
@@ -865,7 +868,7 @@ servos, this value will affect the rate_sp at which the speed ramps up or down.<
 
 <dl class="attribute">
 <dt id="ev3dev.servo_motor.state">
-<tt class="descname">state</tt><a class="headerlink" href="#ev3dev.servo_motor.state" title="Permalink to this definition">¶</a></dt>
+<code class="descname">state</code><a class="headerlink" href="#ev3dev.servo_motor.state" title="Permalink to this definition">¶</a></dt>
 <dd><p>State: read-only</p>
 <p>Returns a space separated list of flags indicating the state of the servo.
 Possible values are:
@@ -876,21 +879,22 @@ Possible values are:
 
 <dl class="function">
 <dt id="ev3dev.steering">
-<tt class="descclassname">ev3dev.</tt><tt class="descname">steering</tt><big>(</big><em>direction</em>, <em>power=100</em><big>)</big><a class="headerlink" href="#ev3dev.steering" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">ev3dev.</code><code class="descname">steering</code><span class="sig-paren">(</span><em>direction</em>, <em>power=100</em><span class="sig-paren">)</span><a class="headerlink" href="#ev3dev.steering" title="Permalink to this definition">¶</a></dt>
 <dd><p>Computes how fast each motor in a pair should turn to achieve the
 specified steering.</p>
 <dl class="docutils">
 <dt>Input:</dt>
 <dd><dl class="first last docutils">
 <dt>direction [-100, 100]:</dt>
-<dd><dl class="first last docutils">
-<dt>-100 means turn left as fast as possible,</dt>
-<dd>0   means drive in a straight line, and
-100 means turn right as fast as possible.</dd>
-</dl>
+<dd><ul class="first last simple">
+<li>-100 means turn left as fast as possible,</li>
+<li>0   means drive in a straight line, and</li>
+<li>100 means turn right as fast as possible.</li>
+</ul>
 </dd>
-<dt>power: the outmost motor (the one rotating faster) should receive this</dt>
-<dd>value of power.</dd>
+<dt>power: the power that should be applied to the outmost motor (the one</dt>
+<dd>rotating faster). The power of the other motor will be computed
+automatically.</dd>
 </dl>
 </dd>
 <dt>Output:</dt>
@@ -908,7 +912,7 @@ specified steering.</p>
 <h3>Sensors<a class="headerlink" href="#sensors" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="ev3dev.sensor">
-<em class="property">class </em><tt class="descclassname">ev3dev.</tt><tt class="descname">sensor</tt><big>(</big><em>(object)arg1</em>, <em>(str)port</em><big>)</big><a class="headerlink" href="#ev3dev.sensor" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">ev3dev.</code><code class="descname">sensor</code><a class="headerlink" href="#ev3dev.sensor" title="Permalink to this definition">¶</a></dt>
 <dd><p>The sensor class provides a uniform interface for using most of the
 sensors available for the EV3. The various underlying device drivers will
 create a <cite>lego-sensor</cite> device for interacting with the sensors.</p>
@@ -923,7 +927,7 @@ have more than one sensor of each type, you can just look for a matching
 program will still work.</p>
 <dl class="method">
 <dt id="ev3dev.sensor.bin_data">
-<tt class="descname">bin_data</tt><big>(</big><em>fmt=None</em><big>)</big><a class="headerlink" href="#ev3dev.sensor.bin_data" title="Permalink to this definition">¶</a></dt>
+<code class="descname">bin_data</code><span class="sig-paren">(</span><em>fmt=None</em><span class="sig-paren">)</span><a class="headerlink" href="#ev3dev.sensor.bin_data" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bin Data: read-only
 Reads the unscaled raw values in the <cite>value&lt;N&gt;</cite> attributes as raw byte
 array. Use <cite>bin_data_format</cite>, <cite>num_values</cite> and the individual sensor
@@ -935,7 +939,7 @@ unpacked tuple. Without arguments returns the raw data as byte buffer.</p>
 
 <dl class="attribute">
 <dt id="ev3dev.sensor.bin_data_format">
-<tt class="descname">bin_data_format</tt><a class="headerlink" href="#ev3dev.sensor.bin_data_format" title="Permalink to this definition">¶</a></dt>
+<code class="descname">bin_data_format</code><a class="headerlink" href="#ev3dev.sensor.bin_data_format" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bin Data Format: read-only
 Returns the format of the values in <cite>bin_data</cite> for the current mode.
 Possible values are:</p>
@@ -954,7 +958,7 @@ Possible values are:</p>
 
 <dl class="attribute">
 <dt id="ev3dev.sensor.bin_data_raw">
-<tt class="descname">bin_data_raw</tt><a class="headerlink" href="#ev3dev.sensor.bin_data_raw" title="Permalink to this definition">¶</a></dt>
+<code class="descname">bin_data_raw</code><a class="headerlink" href="#ev3dev.sensor.bin_data_raw" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bin Data: read-only
 Returns the unscaled raw values in the <cite>value&lt;N&gt;</cite> attributes as raw byte
 array. Use <cite>bin_data_format</cite>, <cite>num_values</cite> and the individual sensor
@@ -963,14 +967,14 @@ documentation to determine how to interpret the data.</p>
 
 <dl class="attribute">
 <dt id="ev3dev.sensor.command">
-<tt class="descname">command</tt><a class="headerlink" href="#ev3dev.sensor.command" title="Permalink to this definition">¶</a></dt>
+<code class="descname">command</code><a class="headerlink" href="#ev3dev.sensor.command" title="Permalink to this definition">¶</a></dt>
 <dd><p>Command: write-only</p>
 <p>Sends a command to the sensor.</p>
 </dd></dl>
 
 <dl class="attribute">
 <dt id="ev3dev.sensor.commands">
-<tt class="descname">commands</tt><a class="headerlink" href="#ev3dev.sensor.commands" title="Permalink to this definition">¶</a></dt>
+<code class="descname">commands</code><a class="headerlink" href="#ev3dev.sensor.commands" title="Permalink to this definition">¶</a></dt>
 <dd><p>Commands: read-only</p>
 <p>Returns a space separated list of the valid commands for the sensor.
 Returns -EOPNOTSUPP if no commands are supported.</p>
@@ -978,7 +982,7 @@ Returns -EOPNOTSUPP if no commands are supported.</p>
 
 <dl class="attribute">
 <dt id="ev3dev.sensor.decimals">
-<tt class="descname">decimals</tt><a class="headerlink" href="#ev3dev.sensor.decimals" title="Permalink to this definition">¶</a></dt>
+<code class="descname">decimals</code><a class="headerlink" href="#ev3dev.sensor.decimals" title="Permalink to this definition">¶</a></dt>
 <dd><p>Decimals: read-only</p>
 <p>Returns the number of decimal places for the values in the <cite>value&lt;N&gt;</cite>
 attributes of the current mode.</p>
@@ -986,7 +990,7 @@ attributes of the current mode.</p>
 
 <dl class="attribute">
 <dt id="ev3dev.sensor.driver_name">
-<tt class="descname">driver_name</tt><a class="headerlink" href="#ev3dev.sensor.driver_name" title="Permalink to this definition">¶</a></dt>
+<code class="descname">driver_name</code><a class="headerlink" href="#ev3dev.sensor.driver_name" title="Permalink to this definition">¶</a></dt>
 <dd><p>Driver Name: read-only</p>
 <p>Returns the name of the sensor device/driver. See the list of [supported
 sensors] for a complete list of drivers.</p>
@@ -994,13 +998,13 @@ sensors] for a complete list of drivers.</p>
 
 <dl class="method">
 <dt id="ev3dev.sensor.float_value">
-<tt class="descname">float_value</tt><big>(</big><em>(sensor)arg1</em><span class="optional">[</span>, <em>(int)index=0</em><span class="optional">]</span><big>)</big> &rarr; float :<a class="headerlink" href="#ev3dev.sensor.float_value" title="Permalink to this definition">¶</a></dt>
+<code class="descname">float_value</code><span class="sig-paren">(</span><em>(sensor)arg1</em><span class="optional">[</span>, <em>(int)index=0</em><span class="optional">]</span><span class="sig-paren">)</span> &rarr; float :<a class="headerlink" href="#ev3dev.sensor.float_value" title="Permalink to this definition">¶</a></dt>
 <dd><p>Reads scaled sensor value</p>
 </dd></dl>
 
 <dl class="attribute">
 <dt id="ev3dev.sensor.mode">
-<tt class="descname">mode</tt><a class="headerlink" href="#ev3dev.sensor.mode" title="Permalink to this definition">¶</a></dt>
+<code class="descname">mode</code><a class="headerlink" href="#ev3dev.sensor.mode" title="Permalink to this definition">¶</a></dt>
 <dd><p>Mode: read/write</p>
 <p>Returns the current mode. Writing one of the values returned by <cite>modes</cite>
 sets the sensor to that mode.</p>
@@ -1008,14 +1012,14 @@ sets the sensor to that mode.</p>
 
 <dl class="attribute">
 <dt id="ev3dev.sensor.modes">
-<tt class="descname">modes</tt><a class="headerlink" href="#ev3dev.sensor.modes" title="Permalink to this definition">¶</a></dt>
+<code class="descname">modes</code><a class="headerlink" href="#ev3dev.sensor.modes" title="Permalink to this definition">¶</a></dt>
 <dd><p>Modes: read-only</p>
 <p>Returns a space separated list of the valid modes for the sensor.</p>
 </dd></dl>
 
 <dl class="attribute">
 <dt id="ev3dev.sensor.num_values">
-<tt class="descname">num_values</tt><a class="headerlink" href="#ev3dev.sensor.num_values" title="Permalink to this definition">¶</a></dt>
+<code class="descname">num_values</code><a class="headerlink" href="#ev3dev.sensor.num_values" title="Permalink to this definition">¶</a></dt>
 <dd><p>Num Values: read-only</p>
 <p>Returns the number of <cite>value&lt;N&gt;</cite> attributes that will return a valid value
 for the current mode.</p>
@@ -1023,7 +1027,7 @@ for the current mode.</p>
 
 <dl class="attribute">
 <dt id="ev3dev.sensor.port_name">
-<tt class="descname">port_name</tt><a class="headerlink" href="#ev3dev.sensor.port_name" title="Permalink to this definition">¶</a></dt>
+<code class="descname">port_name</code><a class="headerlink" href="#ev3dev.sensor.port_name" title="Permalink to this definition">¶</a></dt>
 <dd><p>Port Name: read-only</p>
 <p>Returns the name of the port that the sensor is connected to, e.g. <cite>ev3:in1</cite>.
 I2C sensors also include the I2C address (decimal), e.g. <cite>ev3:in1:i2c8</cite>.</p>
@@ -1031,7 +1035,7 @@ I2C sensors also include the I2C address (decimal), e.g. <cite>ev3:in1:i2c8</cit
 
 <dl class="method">
 <dt id="ev3dev.sensor.set">
-<tt class="descname">set</tt><big>(</big><em>device</em>, <em>**attr</em><big>)</big><a class="headerlink" href="#ev3dev.sensor.set" title="Permalink to this definition">¶</a></dt>
+<code class="descname">set</code><span class="sig-paren">(</span><em>device</em>, <em>**attr</em><span class="sig-paren">)</span><a class="headerlink" href="#ev3dev.sensor.set" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set device attributes provided as keyword arguments</p>
 <p>Example:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">motor</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">speed_regulation_enabled</span><span class="o">=</span><span class="s">&#39;on&#39;</span><span class="p">,</span> <span class="n">stop_command</span><span class="o">=</span><span class="s">&#39;brake&#39;</span><span class="p">)</span>
@@ -1041,7 +1045,7 @@ I2C sensors also include the I2C address (decimal), e.g. <cite>ev3:in1:i2c8</cit
 
 <dl class="attribute">
 <dt id="ev3dev.sensor.units">
-<tt class="descname">units</tt><a class="headerlink" href="#ev3dev.sensor.units" title="Permalink to this definition">¶</a></dt>
+<code class="descname">units</code><a class="headerlink" href="#ev3dev.sensor.units" title="Permalink to this definition">¶</a></dt>
 <dd><p>Units: read-only</p>
 <p>Returns the units of the measured value for the current mode. May return
 empty string</p>
@@ -1049,7 +1053,7 @@ empty string</p>
 
 <dl class="method">
 <dt id="ev3dev.sensor.value">
-<tt class="descname">value</tt><big>(</big><em>(sensor)arg1</em><span class="optional">[</span>, <em>(int)index=0</em><span class="optional">]</span><big>)</big> &rarr; int :<a class="headerlink" href="#ev3dev.sensor.value" title="Permalink to this definition">¶</a></dt>
+<code class="descname">value</code><span class="sig-paren">(</span><em>(sensor)arg1</em><span class="optional">[</span>, <em>(int)index=0</em><span class="optional">]</span><span class="sig-paren">)</span> &rarr; int :<a class="headerlink" href="#ev3dev.sensor.value" title="Permalink to this definition">¶</a></dt>
 <dd><p>Reads unscaled sensor value</p>
 </dd></dl>
 
@@ -1057,12 +1061,12 @@ empty string</p>
 
 <dl class="class">
 <dt id="ev3dev.i2c_sensor">
-<em class="property">class </em><tt class="descclassname">ev3dev.</tt><tt class="descname">i2c_sensor</tt><big>(</big><em>(object)arg1</em><big>)</big><a class="headerlink" href="#ev3dev.i2c_sensor" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <tt class="xref py py-class docutils literal"><span class="pre">ev3dev_ext.sensor</span></tt></p>
+<em class="property">class </em><code class="descclassname">ev3dev.</code><code class="descname">i2c_sensor</code><a class="headerlink" href="#ev3dev.i2c_sensor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">ev3dev_ext.sensor</span></code></p>
 <p>A generic interface to control I2C-type EV3 sensors.</p>
 <dl class="attribute">
 <dt id="ev3dev.i2c_sensor.fw_version">
-<tt class="descname">fw_version</tt><a class="headerlink" href="#ev3dev.i2c_sensor.fw_version" title="Permalink to this definition">¶</a></dt>
+<code class="descname">fw_version</code><a class="headerlink" href="#ev3dev.i2c_sensor.fw_version" title="Permalink to this definition">¶</a></dt>
 <dd><p>FW Version: read-only</p>
 <p>Returns the firmware version of the sensor if available. Currently only
 I2C/NXT sensors support this.</p>
@@ -1070,7 +1074,7 @@ I2C/NXT sensors support this.</p>
 
 <dl class="attribute">
 <dt id="ev3dev.i2c_sensor.poll_ms">
-<tt class="descname">poll_ms</tt><a class="headerlink" href="#ev3dev.i2c_sensor.poll_ms" title="Permalink to this definition">¶</a></dt>
+<code class="descname">poll_ms</code><a class="headerlink" href="#ev3dev.i2c_sensor.poll_ms" title="Permalink to this definition">¶</a></dt>
 <dd><p>Poll MS: read/write</p>
 <p>Returns the polling period of the sensor in milliseconds. Writing sets the
 polling period. Setting to 0 disables polling. Minimum value is hard
@@ -1082,90 +1086,90 @@ Currently only I2C/NXT sensors support changing the polling period.</p>
 
 <dl class="class">
 <dt id="ev3dev.touch_sensor">
-<em class="property">class </em><tt class="descclassname">ev3dev.</tt><tt class="descname">touch_sensor</tt><big>(</big><em>(object)arg1</em><big>)</big><a class="headerlink" href="#ev3dev.touch_sensor" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <tt class="xref py py-class docutils literal"><span class="pre">ev3dev_ext.sensor</span></tt></p>
+<em class="property">class </em><code class="descclassname">ev3dev.</code><code class="descname">touch_sensor</code><a class="headerlink" href="#ev3dev.touch_sensor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">ev3dev_ext.sensor</span></code></p>
 <p>Touch sensor</p>
 </dd></dl>
 
 <dl class="class">
 <dt id="ev3dev.color_sensor">
-<em class="property">class </em><tt class="descclassname">ev3dev.</tt><tt class="descname">color_sensor</tt><big>(</big><em>(object)arg1</em><big>)</big><a class="headerlink" href="#ev3dev.color_sensor" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <tt class="xref py py-class docutils literal"><span class="pre">ev3dev_ext.sensor</span></tt></p>
+<em class="property">class </em><code class="descclassname">ev3dev.</code><code class="descname">color_sensor</code><a class="headerlink" href="#ev3dev.color_sensor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">ev3dev_ext.sensor</span></code></p>
 <p>LEGO EV3 color sensor.</p>
 </dd></dl>
 
 <dl class="class">
 <dt id="ev3dev.ultrasonic_sensor">
-<em class="property">class </em><tt class="descclassname">ev3dev.</tt><tt class="descname">ultrasonic_sensor</tt><big>(</big><em>(object)arg1</em><big>)</big><a class="headerlink" href="#ev3dev.ultrasonic_sensor" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <tt class="xref py py-class docutils literal"><span class="pre">ev3dev_ext.sensor</span></tt></p>
+<em class="property">class </em><code class="descclassname">ev3dev.</code><code class="descname">ultrasonic_sensor</code><a class="headerlink" href="#ev3dev.ultrasonic_sensor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">ev3dev_ext.sensor</span></code></p>
 <p>LEGO EV3 ultrasonic sensor.</p>
 </dd></dl>
 
 <dl class="class">
 <dt id="ev3dev.gyro_sensor">
-<em class="property">class </em><tt class="descclassname">ev3dev.</tt><tt class="descname">gyro_sensor</tt><big>(</big><em>(object)arg1</em><big>)</big><a class="headerlink" href="#ev3dev.gyro_sensor" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <tt class="xref py py-class docutils literal"><span class="pre">ev3dev_ext.sensor</span></tt></p>
+<em class="property">class </em><code class="descclassname">ev3dev.</code><code class="descname">gyro_sensor</code><a class="headerlink" href="#ev3dev.gyro_sensor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">ev3dev_ext.sensor</span></code></p>
 <p>LEGO EV3 gyro sensor.</p>
 </dd></dl>
 
 <dl class="class">
 <dt id="ev3dev.sound_sensor">
-<em class="property">class </em><tt class="descclassname">ev3dev.</tt><tt class="descname">sound_sensor</tt><big>(</big><em>(object)arg1</em><big>)</big><a class="headerlink" href="#ev3dev.sound_sensor" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <tt class="xref py py-class docutils literal"><span class="pre">ev3dev_ext.sensor</span></tt></p>
+<em class="property">class </em><code class="descclassname">ev3dev.</code><code class="descname">sound_sensor</code><a class="headerlink" href="#ev3dev.sound_sensor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">ev3dev_ext.sensor</span></code></p>
 <p>LEGO NXT Sound Sensor</p>
 </dd></dl>
 
 <dl class="class">
 <dt id="ev3dev.light_sensor">
-<em class="property">class </em><tt class="descclassname">ev3dev.</tt><tt class="descname">light_sensor</tt><big>(</big><em>(object)arg1</em><big>)</big><a class="headerlink" href="#ev3dev.light_sensor" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <tt class="xref py py-class docutils literal"><span class="pre">ev3dev_ext.sensor</span></tt></p>
+<em class="property">class </em><code class="descclassname">ev3dev.</code><code class="descname">light_sensor</code><a class="headerlink" href="#ev3dev.light_sensor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">ev3dev_ext.sensor</span></code></p>
 <p>LEGO NXT Light Sensor</p>
 </dd></dl>
 
 <dl class="class">
 <dt id="ev3dev.infrared_sensor">
-<em class="property">class </em><tt class="descclassname">ev3dev.</tt><tt class="descname">infrared_sensor</tt><big>(</big><em>(object)arg1</em><big>)</big><a class="headerlink" href="#ev3dev.infrared_sensor" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <tt class="xref py py-class docutils literal"><span class="pre">ev3dev_ext.sensor</span></tt></p>
+<em class="property">class </em><code class="descclassname">ev3dev.</code><code class="descname">infrared_sensor</code><a class="headerlink" href="#ev3dev.infrared_sensor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">ev3dev_ext.sensor</span></code></p>
 <p>LEGO EV3 infrared sensor.</p>
 </dd></dl>
 
 <dl class="class">
 <dt id="ev3dev.remote_control">
-<em class="property">class </em><tt class="descclassname">ev3dev.</tt><tt class="descname">remote_control</tt><big>(</big><em>(object)arg1</em><big>)</big><a class="headerlink" href="#ev3dev.remote_control" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">ev3dev.</code><code class="descname">remote_control</code><a class="headerlink" href="#ev3dev.remote_control" title="Permalink to this definition">¶</a></dt>
 <dd><p>EV3 remote control</p>
 <dl class="method">
 <dt id="ev3dev.remote_control.on_beacon">
-<tt class="descname">on_beacon</tt><big>(</big><em>(remote_control)arg1</em>, <em>(object)callable</em><big>)</big> &rarr; None<a class="headerlink" href="#ev3dev.remote_control.on_beacon" title="Permalink to this definition">¶</a></dt>
+<code class="descname">on_beacon</code><span class="sig-paren">(</span><em>(remote_control)arg1</em>, <em>(object)callable</em><span class="sig-paren">)</span> &rarr; None<a class="headerlink" href="#ev3dev.remote_control.on_beacon" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="ev3dev.remote_control.on_blue_down">
-<tt class="descname">on_blue_down</tt><big>(</big><em>(remote_control)arg1</em>, <em>(object)callable</em><big>)</big> &rarr; None<a class="headerlink" href="#ev3dev.remote_control.on_blue_down" title="Permalink to this definition">¶</a></dt>
+<code class="descname">on_blue_down</code><span class="sig-paren">(</span><em>(remote_control)arg1</em>, <em>(object)callable</em><span class="sig-paren">)</span> &rarr; None<a class="headerlink" href="#ev3dev.remote_control.on_blue_down" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="ev3dev.remote_control.on_blue_up">
-<tt class="descname">on_blue_up</tt><big>(</big><em>(remote_control)arg1</em>, <em>(object)callable</em><big>)</big> &rarr; None<a class="headerlink" href="#ev3dev.remote_control.on_blue_up" title="Permalink to this definition">¶</a></dt>
+<code class="descname">on_blue_up</code><span class="sig-paren">(</span><em>(remote_control)arg1</em>, <em>(object)callable</em><span class="sig-paren">)</span> &rarr; None<a class="headerlink" href="#ev3dev.remote_control.on_blue_up" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="ev3dev.remote_control.on_red_down">
-<tt class="descname">on_red_down</tt><big>(</big><em>(remote_control)arg1</em>, <em>(object)callable</em><big>)</big> &rarr; None<a class="headerlink" href="#ev3dev.remote_control.on_red_down" title="Permalink to this definition">¶</a></dt>
+<code class="descname">on_red_down</code><span class="sig-paren">(</span><em>(remote_control)arg1</em>, <em>(object)callable</em><span class="sig-paren">)</span> &rarr; None<a class="headerlink" href="#ev3dev.remote_control.on_red_down" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="ev3dev.remote_control.on_red_up">
-<tt class="descname">on_red_up</tt><big>(</big><em>(remote_control)arg1</em>, <em>(object)callable</em><big>)</big> &rarr; None<a class="headerlink" href="#ev3dev.remote_control.on_red_up" title="Permalink to this definition">¶</a></dt>
+<code class="descname">on_red_up</code><span class="sig-paren">(</span><em>(remote_control)arg1</em>, <em>(object)callable</em><span class="sig-paren">)</span> &rarr; None<a class="headerlink" href="#ev3dev.remote_control.on_red_up" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="ev3dev.remote_control.on_state_change">
-<tt class="descname">on_state_change</tt><big>(</big><em>(remote_control)arg1</em>, <em>(object)callable</em><big>)</big> &rarr; None<a class="headerlink" href="#ev3dev.remote_control.on_state_change" title="Permalink to this definition">¶</a></dt>
+<code class="descname">on_state_change</code><span class="sig-paren">(</span><em>(remote_control)arg1</em>, <em>(object)callable</em><span class="sig-paren">)</span> &rarr; None<a class="headerlink" href="#ev3dev.remote_control.on_state_change" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="ev3dev.remote_control.process">
-<tt class="descname">process</tt><big>(</big><em>(remote_control)arg1</em><big>)</big> &rarr; bool<a class="headerlink" href="#ev3dev.remote_control.process" title="Permalink to this definition">¶</a></dt>
+<code class="descname">process</code><span class="sig-paren">(</span><em>(remote_control)arg1</em><span class="sig-paren">)</span> &rarr; bool<a class="headerlink" href="#ev3dev.remote_control.process" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
@@ -1175,80 +1179,80 @@ Currently only I2C/NXT sensors support changing the polling period.</p>
 <h3>Other<a class="headerlink" href="#other" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="ev3dev.led">
-<em class="property">class </em><tt class="descclassname">ev3dev.</tt><tt class="descname">led</tt><big>(</big><em>(object)arg1</em>, <em>(str)name</em><big>)</big><a class="headerlink" href="#ev3dev.led" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">ev3dev.</code><code class="descname">led</code><a class="headerlink" href="#ev3dev.led" title="Permalink to this definition">¶</a></dt>
 <dd><p>Any device controlled by the generic LED driver.</p>
 <dl class="staticmethod">
 <dt id="ev3dev.led.all_off">
-<em class="property">static </em><tt class="descname">all_off</tt><big>(</big><big>)</big> &rarr; None<a class="headerlink" href="#ev3dev.led.all_off" title="Permalink to this definition">¶</a></dt>
+<em class="property">static </em><code class="descname">all_off</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &rarr; None<a class="headerlink" href="#ev3dev.led.all_off" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="staticmethod">
 <dt id="ev3dev.led.all_on">
-<em class="property">static </em><tt class="descname">all_on</tt><big>(</big><big>)</big> &rarr; None<a class="headerlink" href="#ev3dev.led.all_on" title="Permalink to this definition">¶</a></dt>
+<em class="property">static </em><code class="descname">all_on</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &rarr; None<a class="headerlink" href="#ev3dev.led.all_on" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="attribute">
 <dt id="ev3dev.led.brightness">
-<tt class="descname">brightness</tt><a class="headerlink" href="#ev3dev.led.brightness" title="Permalink to this definition">¶</a></dt>
+<code class="descname">brightness</code><a class="headerlink" href="#ev3dev.led.brightness" title="Permalink to this definition">¶</a></dt>
 <dd><p>Brightness: read/write</p>
 <p>Sets the brightness level. Possible values are from 0 to <cite>max_brightness</cite>.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="ev3dev.led.flash">
-<tt class="descname">flash</tt><big>(</big><em>(led)arg1</em>, <em>(int)interval_ms</em><big>)</big> &rarr; None<a class="headerlink" href="#ev3dev.led.flash" title="Permalink to this definition">¶</a></dt>
+<code class="descname">flash</code><span class="sig-paren">(</span><em>(led)arg1</em>, <em>(int)interval_ms</em><span class="sig-paren">)</span> &rarr; None<a class="headerlink" href="#ev3dev.led.flash" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="staticmethod">
 <dt id="ev3dev.led.green_off">
-<em class="property">static </em><tt class="descname">green_off</tt><big>(</big><big>)</big> &rarr; None<a class="headerlink" href="#ev3dev.led.green_off" title="Permalink to this definition">¶</a></dt>
+<em class="property">static </em><code class="descname">green_off</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &rarr; None<a class="headerlink" href="#ev3dev.led.green_off" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="staticmethod">
 <dt id="ev3dev.led.green_on">
-<em class="property">static </em><tt class="descname">green_on</tt><big>(</big><big>)</big> &rarr; None<a class="headerlink" href="#ev3dev.led.green_on" title="Permalink to this definition">¶</a></dt>
+<em class="property">static </em><code class="descname">green_on</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &rarr; None<a class="headerlink" href="#ev3dev.led.green_on" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="attribute">
 <dt id="ev3dev.led.max_brightness">
-<tt class="descname">max_brightness</tt><a class="headerlink" href="#ev3dev.led.max_brightness" title="Permalink to this definition">¶</a></dt>
+<code class="descname">max_brightness</code><a class="headerlink" href="#ev3dev.led.max_brightness" title="Permalink to this definition">¶</a></dt>
 <dd><p>Max Brightness: read-only</p>
 <p>Gets the maximum allowable brightness value</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="ev3dev.led.off">
-<tt class="descname">off</tt><big>(</big><em>(led)arg1</em><big>)</big> &rarr; None<a class="headerlink" href="#ev3dev.led.off" title="Permalink to this definition">¶</a></dt>
+<code class="descname">off</code><span class="sig-paren">(</span><em>(led)arg1</em><span class="sig-paren">)</span> &rarr; None<a class="headerlink" href="#ev3dev.led.off" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="ev3dev.led.on">
-<tt class="descname">on</tt><big>(</big><em>(led)arg1</em><big>)</big> &rarr; None<a class="headerlink" href="#ev3dev.led.on" title="Permalink to this definition">¶</a></dt>
+<code class="descname">on</code><span class="sig-paren">(</span><em>(led)arg1</em><span class="sig-paren">)</span> &rarr; None<a class="headerlink" href="#ev3dev.led.on" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="staticmethod">
 <dt id="ev3dev.led.red_off">
-<em class="property">static </em><tt class="descname">red_off</tt><big>(</big><big>)</big> &rarr; None<a class="headerlink" href="#ev3dev.led.red_off" title="Permalink to this definition">¶</a></dt>
+<em class="property">static </em><code class="descname">red_off</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &rarr; None<a class="headerlink" href="#ev3dev.led.red_off" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="staticmethod">
 <dt id="ev3dev.led.red_on">
-<em class="property">static </em><tt class="descname">red_on</tt><big>(</big><big>)</big> &rarr; None<a class="headerlink" href="#ev3dev.led.red_on" title="Permalink to this definition">¶</a></dt>
+<em class="property">static </em><code class="descname">red_on</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &rarr; None<a class="headerlink" href="#ev3dev.led.red_on" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="ev3dev.led.set_off_delay">
-<tt class="descname">set_off_delay</tt><big>(</big><em>(led)arg1</em>, <em>(int)ms</em><big>)</big> &rarr; None<a class="headerlink" href="#ev3dev.led.set_off_delay" title="Permalink to this definition">¶</a></dt>
+<code class="descname">set_off_delay</code><span class="sig-paren">(</span><em>(led)arg1</em>, <em>(int)ms</em><span class="sig-paren">)</span> &rarr; None<a class="headerlink" href="#ev3dev.led.set_off_delay" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="ev3dev.led.set_on_delay">
-<tt class="descname">set_on_delay</tt><big>(</big><em>(led)arg1</em>, <em>(int)ms</em><big>)</big> &rarr; None<a class="headerlink" href="#ev3dev.led.set_on_delay" title="Permalink to this definition">¶</a></dt>
+<code class="descname">set_on_delay</code><span class="sig-paren">(</span><em>(led)arg1</em>, <em>(int)ms</em><span class="sig-paren">)</span> &rarr; None<a class="headerlink" href="#ev3dev.led.set_on_delay" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="attribute">
 <dt id="ev3dev.led.trigger">
-<tt class="descname">trigger</tt><a class="headerlink" href="#ev3dev.led.trigger" title="Permalink to this definition">¶</a></dt>
+<code class="descname">trigger</code><a class="headerlink" href="#ev3dev.led.trigger" title="Permalink to this definition">¶</a></dt>
 <dd><p>Trigger: read/write</p>
 <p>Sets the led trigger.</p>
 </dd></dl>
@@ -1257,44 +1261,44 @@ Currently only I2C/NXT sensors support changing the polling period.</p>
 
 <dl class="class">
 <dt id="ev3dev.power_supply">
-<em class="property">class </em><tt class="descclassname">ev3dev.</tt><tt class="descname">power_supply</tt><big>(</big><em>(object)arg1</em>, <em>(str)name</em><big>)</big><a class="headerlink" href="#ev3dev.power_supply" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">ev3dev.</code><code class="descname">power_supply</code><a class="headerlink" href="#ev3dev.power_supply" title="Permalink to this definition">¶</a></dt>
 <dd><p>A generic interface to read data from the system&#8217;s power_supply class.
 Uses the built-in legoev3-battery if none is specified.</p>
 <dl class="attribute">
 <dt id="ev3dev.power_supply.max_voltage">
-<tt class="descname">max_voltage</tt><a class="headerlink" href="#ev3dev.power_supply.max_voltage" title="Permalink to this definition">¶</a></dt>
+<code class="descname">max_voltage</code><a class="headerlink" href="#ev3dev.power_supply.max_voltage" title="Permalink to this definition">¶</a></dt>
 <dd><p>Max Voltage: read-only</p>
 </dd></dl>
 
 <dl class="attribute">
 <dt id="ev3dev.power_supply.measured_current">
-<tt class="descname">measured_current</tt><a class="headerlink" href="#ev3dev.power_supply.measured_current" title="Permalink to this definition">¶</a></dt>
+<code class="descname">measured_current</code><a class="headerlink" href="#ev3dev.power_supply.measured_current" title="Permalink to this definition">¶</a></dt>
 <dd><p>Measured Current: read-only</p>
 <p>The measured current that the battery is supplying (in microamps)</p>
 </dd></dl>
 
 <dl class="attribute">
 <dt id="ev3dev.power_supply.measured_voltage">
-<tt class="descname">measured_voltage</tt><a class="headerlink" href="#ev3dev.power_supply.measured_voltage" title="Permalink to this definition">¶</a></dt>
+<code class="descname">measured_voltage</code><a class="headerlink" href="#ev3dev.power_supply.measured_voltage" title="Permalink to this definition">¶</a></dt>
 <dd><p>Measured Voltage: read-only</p>
 <p>The measured voltage that the battery is supplying (in microvolts)</p>
 </dd></dl>
 
 <dl class="attribute">
 <dt id="ev3dev.power_supply.min_voltage">
-<tt class="descname">min_voltage</tt><a class="headerlink" href="#ev3dev.power_supply.min_voltage" title="Permalink to this definition">¶</a></dt>
+<code class="descname">min_voltage</code><a class="headerlink" href="#ev3dev.power_supply.min_voltage" title="Permalink to this definition">¶</a></dt>
 <dd><p>Min Voltage: read-only</p>
 </dd></dl>
 
 <dl class="attribute">
 <dt id="ev3dev.power_supply.technology">
-<tt class="descname">technology</tt><a class="headerlink" href="#ev3dev.power_supply.technology" title="Permalink to this definition">¶</a></dt>
+<code class="descname">technology</code><a class="headerlink" href="#ev3dev.power_supply.technology" title="Permalink to this definition">¶</a></dt>
 <dd><p>Technology: read-only</p>
 </dd></dl>
 
 <dl class="attribute">
 <dt id="ev3dev.power_supply.type">
-<tt class="descname">type</tt><a class="headerlink" href="#ev3dev.power_supply.type" title="Permalink to this definition">¶</a></dt>
+<code class="descname">type</code><a class="headerlink" href="#ev3dev.power_supply.type" title="Permalink to this definition">¶</a></dt>
 <dd><p>Type: read-only</p>
 </dd></dl>
 
@@ -1302,64 +1306,64 @@ Uses the built-in legoev3-battery if none is specified.</p>
 
 <dl class="class">
 <dt id="ev3dev.button">
-<em class="property">class </em><tt class="descclassname">ev3dev.</tt><tt class="descname">button</tt><big>(</big><em>(object)arg1</em>, <em>(int)bit</em><big>)</big><a class="headerlink" href="#ev3dev.button" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">ev3dev.</code><code class="descname">button</code><a class="headerlink" href="#ev3dev.button" title="Permalink to this definition">¶</a></dt>
 <dd><p>EV3 buttons</p>
 </dd></dl>
 
 <dl class="class">
 <dt id="ev3dev.sound">
-<em class="property">class </em><tt class="descclassname">ev3dev.</tt><tt class="descname">sound</tt><big>(</big><em>(object)arg1</em><big>)</big><a class="headerlink" href="#ev3dev.sound" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">ev3dev.</code><code class="descname">sound</code><a class="headerlink" href="#ev3dev.sound" title="Permalink to this definition">¶</a></dt>
 <dd><p>EV3 sound</p>
 <dl class="staticmethod">
 <dt id="ev3dev.sound.beep">
-<em class="property">static </em><tt class="descname">beep</tt><big>(</big><big>)</big> &rarr; None<a class="headerlink" href="#ev3dev.sound.beep" title="Permalink to this definition">¶</a></dt>
+<em class="property">static </em><code class="descname">beep</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &rarr; None<a class="headerlink" href="#ev3dev.sound.beep" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="staticmethod">
 <dt id="ev3dev.sound.play">
-<em class="property">static </em><tt class="descname">play</tt><big>(</big><em>(str)soundfile</em><big>)</big> &rarr; None<a class="headerlink" href="#ev3dev.sound.play" title="Permalink to this definition">¶</a></dt>
+<em class="property">static </em><code class="descname">play</code><span class="sig-paren">(</span><em>(str)soundfile</em><span class="sig-paren">)</span> &rarr; None<a class="headerlink" href="#ev3dev.sound.play" title="Permalink to this definition">¶</a></dt>
 <dd><p>play( (str)soundfile, (bool)bSynchronous) -&gt; None</p>
 </dd></dl>
 
 <dl class="staticmethod">
 <dt id="ev3dev.sound.speak">
-<em class="property">static </em><tt class="descname">speak</tt><big>(</big><em>(str)text</em><big>)</big> &rarr; None<a class="headerlink" href="#ev3dev.sound.speak" title="Permalink to this definition">¶</a></dt>
+<em class="property">static </em><code class="descname">speak</code><span class="sig-paren">(</span><em>(str)text</em><span class="sig-paren">)</span> &rarr; None<a class="headerlink" href="#ev3dev.sound.speak" title="Permalink to this definition">¶</a></dt>
 <dd><p>speak( (str)text, (bool)bSynchronous) -&gt; None</p>
 </dd></dl>
 
 <dl class="staticmethod">
 <dt id="ev3dev.sound.tone">
-<em class="property">static </em><tt class="descname">tone</tt><big>(</big><em>(int)arg1</em>, <em>(int)arg2</em><big>)</big> &rarr; None<a class="headerlink" href="#ev3dev.sound.tone" title="Permalink to this definition">¶</a></dt>
+<em class="property">static </em><code class="descname">tone</code><span class="sig-paren">(</span><em>(int)arg1</em>, <em>(int)arg2</em><span class="sig-paren">)</span> &rarr; None<a class="headerlink" href="#ev3dev.sound.tone" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
 <dl class="class">
 <dt id="ev3dev.lcd">
-<em class="property">class </em><tt class="descclassname">ev3dev.</tt><tt class="descname">lcd</tt><big>(</big><em>(object)arg1</em><big>)</big><a class="headerlink" href="#ev3dev.lcd" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">ev3dev.</code><code class="descname">lcd</code><a class="headerlink" href="#ev3dev.lcd" title="Permalink to this definition">¶</a></dt>
 <dd><p>EV3 LCD</p>
 <dl class="method">
 <dt id="ev3dev.lcd.fill">
-<tt class="descname">fill</tt><big>(</big><em>(lcd)arg1</em>, <em>(int)pixel</em><big>)</big> &rarr; None<a class="headerlink" href="#ev3dev.lcd.fill" title="Permalink to this definition">¶</a></dt>
+<code class="descname">fill</code><span class="sig-paren">(</span><em>(lcd)arg1</em>, <em>(int)pixel</em><span class="sig-paren">)</span> &rarr; None<a class="headerlink" href="#ev3dev.lcd.fill" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
 <dl class="class">
 <dt id="ev3dev.LCD">
-<em class="property">class </em><tt class="descclassname">ev3dev.</tt><tt class="descname">LCD</tt><a class="headerlink" href="#ev3dev.LCD" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <tt class="xref py py-class docutils literal"><span class="pre">ev3dev_ext.lcd</span></tt></p>
+<em class="property">class </em><code class="descclassname">ev3dev.</code><code class="descname">LCD</code><a class="headerlink" href="#ev3dev.LCD" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">ev3dev_ext.lcd</span></code></p>
 <p>A convenience wrapper for ev3dev.lcd class.
 Provides drawing functions from python imaging library (PIL).</p>
 <dl class="method">
 <dt id="ev3dev.LCD.clear">
-<tt class="descname">clear</tt><big>(</big><big>)</big><a class="headerlink" href="#ev3dev.LCD.clear" title="Permalink to this definition">¶</a></dt>
+<code class="descname">clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ev3dev.LCD.clear" title="Permalink to this definition">¶</a></dt>
 <dd><p>Clears the LCD.</p>
 </dd></dl>
 
 <dl class="attribute">
 <dt id="ev3dev.LCD.draw">
-<tt class="descname">draw</tt><a class="headerlink" href="#ev3dev.LCD.draw" title="Permalink to this definition">¶</a></dt>
+<code class="descname">draw</code><a class="headerlink" href="#ev3dev.LCD.draw" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns a handle to PIL.ImageDraw.Draw class associated with LCD.</p>
 <p>Example:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">lcd</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">rectangle</span><span class="p">((</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">60</span><span class="p">,</span><span class="mi">20</span><span class="p">),</span> <span class="n">fill</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
@@ -1369,13 +1373,13 @@ Provides drawing functions from python imaging library (PIL).</p>
 
 <dl class="attribute">
 <dt id="ev3dev.LCD.shape">
-<tt class="descname">shape</tt><a class="headerlink" href="#ev3dev.LCD.shape" title="Permalink to this definition">¶</a></dt>
+<code class="descname">shape</code><a class="headerlink" href="#ev3dev.LCD.shape" title="Permalink to this definition">¶</a></dt>
 <dd><p>Dimensions of the LCD screen.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="ev3dev.LCD.update">
-<tt class="descname">update</tt><big>(</big><big>)</big><a class="headerlink" href="#ev3dev.LCD.update" title="Permalink to this definition">¶</a></dt>
+<code class="descname">update</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ev3dev.LCD.update" title="Permalink to this definition">¶</a></dt>
 <dd><p>Applies pending changes to LCD.
 Nothing will be drawn on the screen until this function is called.</p>
 </dd></dl>
@@ -1388,9 +1392,9 @@ Nothing will be drawn on the screen until this function is called.</p>
 <div class="section" id="indices-and-tables">
 <h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
-<li><a class="reference internal" href="genindex.html"><em>Index</em></a></li>
-<li><a class="reference internal" href="py-modindex.html"><em>Module Index</em></a></li>
-<li><a class="reference internal" href="search.html"><em>Search Page</em></a></li>
+<li><a class="reference internal" href="genindex.html"><span>Index</span></a></li>
+<li><a class="reference internal" href="py-modindex.html"><span>Module Index</span></a></li>
+<li><a class="reference internal" href="search.html"><span>Search Page</span></a></li>
 </ul>
 </div>
 
@@ -1398,7 +1402,7 @@ Nothing will be drawn on the screen until this function is called.</p>
           </div>
         </div>
       </div>
-      <div class="sphinxsidebar">
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
   <h3><a href="#">Table Of Contents</a></h3>
   <ul>
@@ -1417,7 +1421,7 @@ Nothing will be drawn on the screen until this function is called.</p>
 <li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
 </ul>
 
-<div id="searchbox" style="display: none">
+<div id="searchbox" style="display: none" role="search">
   <h3>Quick search</h3>
     <form class="search" action="search.html" method="get">
       <input type="text" name="q" />
@@ -1434,7 +1438,7 @@ Nothing will be drawn on the screen until this function is called.</p>
       </div>
       <div class="clearer"></div>
     </div>
-    <div class="related">
+    <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
@@ -1443,12 +1447,12 @@ Nothing will be drawn on the screen until this function is called.</p>
         <li class="right" >
           <a href="py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li><a href="#">ev3dev 0.2.0.post14 documentation</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="#">ev3dev 0.2.0.post15 documentation</a> &raquo;</li> 
       </ul>
     </div>
-    <div class="footer">
+    <div class="footer" role="contentinfo">
         &copy; Copyright 2015, Denis Demidov &lt;dennis.demidov@gmail.com&gt;.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.
     </div>
   </body>
 </html>
