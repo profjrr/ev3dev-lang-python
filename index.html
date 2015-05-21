@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Python language bindings for ev3dev &mdash; ev3dev 0.2.1 documentation</title>
+    <title>Python language bindings for ev3dev &mdash; ev3dev 0.2.1.post1 documentation</title>
     
     <link rel="stylesheet" href="_static/pyramid.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -14,7 +14,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '0.2.1',
+        VERSION:     '0.2.1.post1',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -23,7 +23,7 @@
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="top" title="ev3dev 0.2.1 documentation" href="#" />
+    <link rel="top" title="ev3dev 0.2.1.post1 documentation" href="#" />
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Neuton&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Nobile:regular,italic,bold,bolditalic&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
 <!--[if lte IE 6]>
@@ -42,7 +42,7 @@
         <li class="right" >
           <a href="py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="#">ev3dev 0.2.1 documentation</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="#">ev3dev 0.2.1.post1 documentation</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -359,10 +359,10 @@ is off.</p>
 <code class="descname">encoder_polarity</code><a class="headerlink" href="#ev3dev.motor.encoder_polarity" title="Permalink to this definition">¶</a></dt>
 <dd><p>Encoder Polarity: read/write</p>
 <p>Sets the polarity of the rotary encoder. This is an advanced feature to all
-use of motors that send inverted encoder signals to the EV3. This should
+use of motors that send inversed encoder signals to the EV3. This should
 be set correctly by the driver of a device. It You only need to change this
 value if you are using a unsupported device. Valid values are <cite>normal</cite> and
-<cite>inverted</cite>.</p>
+<cite>inversed</cite>.</p>
 </dd></dl>
 
 <dl class="attribute">
@@ -370,9 +370,9 @@ value if you are using a unsupported device. Valid values are <cite>normal</cite
 <code class="descname">polarity</code><a class="headerlink" href="#ev3dev.motor.polarity" title="Permalink to this definition">¶</a></dt>
 <dd><p>Polarity: read/write</p>
 <p>Sets the polarity of the motor. With <cite>normal</cite> polarity, a positive duty
-cycle will cause the motor to rotate clockwise. With <cite>inverted</cite> polarity,
+cycle will cause the motor to rotate clockwise. With <cite>inversed</cite> polarity,
 a positive duty cycle will cause the motor to rotate counter-clockwise.
-Valid values are <cite>normal</cite> and <cite>inverted</cite>.</p>
+Valid values are <cite>normal</cite> and <cite>inversed</cite>.</p>
 </dd></dl>
 
 <dl class="attribute">
@@ -667,7 +667,7 @@ setpoint.</p>
 <dt id="ev3dev.dc_motor.polarity">
 <code class="descname">polarity</code><a class="headerlink" href="#ev3dev.dc_motor.polarity" title="Permalink to this definition">¶</a></dt>
 <dd><p>Polarity: read/write</p>
-<p>Sets the polarity of the motor. Valid values are <cite>normal</cite> and <cite>inverted</cite>.</p>
+<p>Sets the polarity of the motor. Valid values are <cite>normal</cite> and <cite>inversed</cite>.</p>
 </dd></dl>
 
 <dl class="attribute">
@@ -815,9 +815,9 @@ attribute for changes to this attribute to take effect.</p>
 <dt id="ev3dev.servo_motor.polarity">
 <code class="descname">polarity</code><a class="headerlink" href="#ev3dev.servo_motor.polarity" title="Permalink to this definition">¶</a></dt>
 <dd><p>Polarity: read/write</p>
-<p>Sets the polarity of the servo. Valid values are <cite>normal</cite> and <cite>inverted</cite>.
-Setting the value to <cite>inverted</cite> will cause the position_sp value to be
-inverted. i.e <cite>-100</cite> will correspond to <cite>max_pulse_sp</cite>, and <cite>100</cite> will
+<p>Sets the polarity of the servo. Valid values are <cite>normal</cite> and <cite>inversed</cite>.
+Setting the value to <cite>inversed</cite> will cause the position_sp value to be
+inversed. i.e <cite>-100</cite> will correspond to <cite>max_pulse_sp</cite>, and <cite>100</cite> will
 correspond to <cite>min_pulse_sp</cite>.</p>
 </dd></dl>
 
@@ -1447,7 +1447,7 @@ Nothing will be drawn on the screen until this function is called.</p>
         <li class="right" >
           <a href="py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="#">ev3dev 0.2.1 documentation</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="#">ev3dev 0.2.1.post1 documentation</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
