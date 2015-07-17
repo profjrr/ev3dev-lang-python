@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Python language bindings for ev3dev &mdash; ev3dev 0.2.1.post10 documentation</title>
+    <title>Python language bindings for ev3dev &mdash; ev3dev 0.2.1.post11 documentation</title>
     
     <link rel="stylesheet" href="_static/pyramid.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -14,7 +14,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '0.2.1.post10',
+        VERSION:     '0.2.1.post11',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -23,7 +23,7 @@
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="top" title="ev3dev 0.2.1.post10 documentation" href="#" />
+    <link rel="top" title="ev3dev 0.2.1.post11 documentation" href="#" />
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Neuton&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Nobile:regular,italic,bold,bolditalic&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
 <!--[if lte IE 6]>
@@ -42,7 +42,7 @@
         <li class="right" >
           <a href="py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="#">ev3dev 0.2.1.post10 documentation</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="#">ev3dev 0.2.1.post11 documentation</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -1361,13 +1361,30 @@ Uses the built-in legoev3-battery if none is specified.</p>
 <dd><p>EV3 buttons</p>
 <dl class="method">
 <dt id="ev3dev.button.onclick">
-<code class="descname">onclick</code><span class="sig-paren">(</span><em>(button)arg1</em>, <em>(object)callable</em><span class="sig-paren">)</span> &rarr; None<a class="headerlink" href="#ev3dev.button.onclick" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<code class="descname">onclick</code><span class="sig-paren">(</span><em>(button)arg1</em>, <em>(object)callable</em><span class="sig-paren">)</span> &rarr; None :<a class="headerlink" href="#ev3dev.button.onclick" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set function to be called when the button is clicked.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ev3dev.button.pressed">
+<code class="descname">pressed</code><a class="headerlink" href="#ev3dev.button.pressed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if the button is pressed</p>
+</dd></dl>
 
 <dl class="method">
 <dt id="ev3dev.button.process">
-<code class="descname">process</code><span class="sig-paren">(</span><em>(button)arg1</em><span class="sig-paren">)</span> &rarr; bool<a class="headerlink" href="#ev3dev.button.process" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<code class="descname">process</code><span class="sig-paren">(</span><em>(button)arg1</em><span class="sig-paren">)</span> &rarr; bool :<a class="headerlink" href="#ev3dev.button.process" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks if the button state has changed,
+calls function in case it has.
+Returns true if the state has changed since the last call.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="ev3dev.button.process_all">
+<em class="property">static </em><code class="descname">process_all</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &rarr; bool :<a class="headerlink" href="#ev3dev.button.process_all" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calls process() for each of the EV3 buttons.
+Returns true if any of the states have changed since the last call.</p>
+</dd></dl>
 
 </dd></dl>
 
@@ -1511,7 +1528,7 @@ Nothing will be drawn on the screen until this function is called.</p>
         <li class="right" >
           <a href="py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="#">ev3dev 0.2.1.post10 documentation</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="#">ev3dev 0.2.1.post11 documentation</a> &raquo;</li> 
       </ul>
     </div>
 
