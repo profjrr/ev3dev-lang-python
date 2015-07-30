@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Python language bindings for ev3dev &mdash; ev3dev 0.2.1.post11 documentation</title>
+    <title>Python language bindings for ev3dev &mdash; ev3dev 0.2.1.post13 documentation</title>
     
     <link rel="stylesheet" href="_static/pyramid.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -14,7 +14,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '0.2.1.post11',
+        VERSION:     '0.2.1.post13',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -23,7 +23,7 @@
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="top" title="ev3dev 0.2.1.post11 documentation" href="#" />
+    <link rel="top" title="ev3dev 0.2.1.post13 documentation" href="#" />
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Neuton&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Nobile:regular,italic,bold,bolditalic&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
 <!--[if lte IE 6]>
@@ -42,7 +42,7 @@
         <li class="right" >
           <a href="py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="#">ev3dev 0.2.1.post11 documentation</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="#">ev3dev 0.2.1.post13 documentation</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -1291,22 +1291,17 @@ Currently only I2C/NXT sensors support changing the polling period.</p>
 <em class="property">static </em><code class="descname">red_on</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &rarr; None<a class="headerlink" href="#ev3dev.led.red_on" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
-<dt id="ev3dev.led.set_off_delay">
-<code class="descname">set_off_delay</code><span class="sig-paren">(</span><em>(led)arg1</em>, <em>(int)ms</em><span class="sig-paren">)</span> &rarr; None<a class="headerlink" href="#ev3dev.led.set_off_delay" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="method">
-<dt id="ev3dev.led.set_on_delay">
-<code class="descname">set_on_delay</code><span class="sig-paren">(</span><em>(led)arg1</em>, <em>(int)ms</em><span class="sig-paren">)</span> &rarr; None<a class="headerlink" href="#ev3dev.led.set_on_delay" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
 <dl class="attribute">
 <dt id="ev3dev.led.trigger">
 <code class="descname">trigger</code><a class="headerlink" href="#ev3dev.led.trigger" title="Permalink to this definition">¶</a></dt>
 <dd><p>Trigger: read/write</p>
 <p>Sets the led trigger.</p>
 </dd></dl>
+
+<dl class="method">
+<dt id="ev3dev.led.triggers">
+<code class="descname">triggers</code><span class="sig-paren">(</span><em>(led)arg1</em><span class="sig-paren">)</span> &rarr; mode_set<a class="headerlink" href="#ev3dev.led.triggers" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
 
 </dd></dl>
 
@@ -1528,7 +1523,7 @@ Nothing will be drawn on the screen until this function is called.</p>
         <li class="right" >
           <a href="py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="#">ev3dev 0.2.1.post11 documentation</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="#">ev3dev 0.2.1.post13 documentation</a> &raquo;</li> 
       </ul>
     </div>
 
