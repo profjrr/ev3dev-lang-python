@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Python language bindings for ev3dev &mdash; ev3dev 0.2.1.post16 documentation</title>
+    <title>Python language bindings for ev3dev &mdash; ev3dev 0.2.1.post17 documentation</title>
     
     <link rel="stylesheet" href="_static/pyramid.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -14,7 +14,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '0.2.1.post16',
+        VERSION:     '0.2.1.post17',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -23,7 +23,7 @@
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="top" title="ev3dev 0.2.1.post16 documentation" href="#" />
+    <link rel="top" title="ev3dev 0.2.1.post17 documentation" href="#" />
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Neuton&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Nobile:regular,italic,bold,bolditalic&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
 <!--[if lte IE 6]>
@@ -42,7 +42,7 @@
         <li class="right" >
           <a href="py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="#">ev3dev 0.2.1.post16 documentation</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="#">ev3dev 0.2.1.post17 documentation</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -1231,7 +1231,9 @@ Currently only I2C/NXT sensors support changing the polling period.</p>
 <dl class="class">
 <dt id="ev3dev.led">
 <em class="property">class </em><code class="descclassname">ev3dev.</code><code class="descname">led</code><a class="headerlink" href="#ev3dev.led" title="Permalink to this definition">¶</a></dt>
-<dd><p>Any device controlled by the generic LED driver.</p>
+<dd><p>Any device controlled by the generic LED driver.
+See <a class="reference external" href="https://www.kernel.org/doc/Documentation/leds/leds-class.txt">https://www.kernel.org/doc/Documentation/leds/leds-class.txt</a>
+for more details.</p>
 <dl class="staticmethod">
 <dt id="ev3dev.led.all_off">
 <em class="property">static </em><code class="descname">all_off</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &rarr; None<a class="headerlink" href="#ev3dev.led.all_off" title="Permalink to this definition">¶</a></dt>
@@ -1249,9 +1251,27 @@ Currently only I2C/NXT sensors support changing the polling period.</p>
 <p>Sets the brightness level. Possible values are from 0 to <cite>max_brightness</cite>.</p>
 </dd></dl>
 
+<dl class="attribute">
+<dt id="ev3dev.led.delay_off">
+<code class="descname">delay_off</code><a class="headerlink" href="#ev3dev.led.delay_off" title="Permalink to this definition">¶</a></dt>
+<dd><p>Delay Off: read/write</p>
+<p>The <cite>timer</cite> trigger will periodically change the LED brightness between
+0 and the current brightness setting. The <cite>off</cite> time can
+be specified via <cite>delay_off</cite> attribute in milliseconds.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ev3dev.led.delay_on">
+<code class="descname">delay_on</code><a class="headerlink" href="#ev3dev.led.delay_on" title="Permalink to this definition">¶</a></dt>
+<dd><p>Delay On: read/write</p>
+<p>The <cite>timer</cite> trigger will periodically change the LED brightness between
+0 and the current brightness setting. The <cite>on</cite> time can
+be specified via <cite>delay_on</cite> attribute in milliseconds.</p>
+</dd></dl>
+
 <dl class="method">
 <dt id="ev3dev.led.flash">
-<code class="descname">flash</code><span class="sig-paren">(</span><em>(led)arg1</em>, <em>(int)interval_ms</em><span class="sig-paren">)</span> &rarr; None<a class="headerlink" href="#ev3dev.led.flash" title="Permalink to this definition">¶</a></dt>
+<code class="descname">flash</code><span class="sig-paren">(</span><em>(led)arg1</em>, <em>(int)on_ms</em>, <em>(int)off_ms</em><span class="sig-paren">)</span> &rarr; None<a class="headerlink" href="#ev3dev.led.flash" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="staticmethod">
@@ -1268,7 +1288,7 @@ Currently only I2C/NXT sensors support changing the polling period.</p>
 <dt id="ev3dev.led.max_brightness">
 <code class="descname">max_brightness</code><a class="headerlink" href="#ev3dev.led.max_brightness" title="Permalink to this definition">¶</a></dt>
 <dd><p>Max Brightness: read-only</p>
-<p>Gets the maximum allowable brightness value</p>
+<p>Returns the maximum allowable brightness value.</p>
 </dd></dl>
 
 <dl class="method">
@@ -1295,13 +1315,27 @@ Currently only I2C/NXT sensors support changing the polling period.</p>
 <dt id="ev3dev.led.trigger">
 <code class="descname">trigger</code><a class="headerlink" href="#ev3dev.led.trigger" title="Permalink to this definition">¶</a></dt>
 <dd><p>Trigger: read/write</p>
-<p>Sets the led trigger.</p>
+<p>Sets the led trigger. A trigger
+is a kernel based source of led events. Triggers can either be simple or
+complex. A simple trigger isn&#8217;t configurable and is designed to slot into
+existing subsystems with minimal additional code. Examples are the <cite>ide-disk</cite> and
+<cite>nand-disk</cite> triggers.</p>
+<p>Complex triggers whilst available to all LEDs have LED specific
+parameters and work on a per LED basis. The <cite>timer</cite> trigger is an example.
+The <cite>timer</cite> trigger will periodically change the LED brightness between
+0 and the current brightness setting. The <cite>on</cite> and <cite>off</cite> time can
+be specified via <cite>delay_{on,off}</cite> attributes in milliseconds.
+You can change the brightness value of a LED independently of the timer
+trigger. However, if you set the brightness value to 0 it will
+also disable the <cite>timer</cite> trigger.</p>
 </dd></dl>
 
-<dl class="method">
+<dl class="attribute">
 <dt id="ev3dev.led.triggers">
-<code class="descname">triggers</code><span class="sig-paren">(</span><em>(led)arg1</em><span class="sig-paren">)</span> &rarr; mode_set<a class="headerlink" href="#ev3dev.led.triggers" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<code class="descname">triggers</code><a class="headerlink" href="#ev3dev.led.triggers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Triggers: read-only</p>
+<p>Returns a list of available triggers.</p>
+</dd></dl>
 
 </dd></dl>
 
@@ -1523,7 +1557,7 @@ Nothing will be drawn on the screen until this function is called.</p>
         <li class="right" >
           <a href="py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="#">ev3dev 0.2.1.post16 documentation</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="#">ev3dev 0.2.1.post17 documentation</a> &raquo;</li> 
       </ul>
     </div>
 
