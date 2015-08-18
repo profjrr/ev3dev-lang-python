@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Python language bindings for ev3dev &mdash; ev3dev 0.2.1.post17 documentation</title>
+    <title>Python language bindings for ev3dev &mdash; ev3dev 0.2.1.post18 documentation</title>
     
     <link rel="stylesheet" href="_static/pyramid.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -14,7 +14,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '0.2.1.post17',
+        VERSION:     '0.2.1.post18',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -23,7 +23,7 @@
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="top" title="ev3dev 0.2.1.post17 documentation" href="#" />
+    <link rel="top" title="ev3dev 0.2.1.post18 documentation" href="#" />
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Neuton&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Nobile:regular,italic,bold,bolditalic&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
 <!--[if lte IE 6]>
@@ -42,7 +42,7 @@
         <li class="right" >
           <a href="py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="#">ev3dev 0.2.1.post17 documentation</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="#">ev3dev 0.2.1.post18 documentation</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -350,7 +350,7 @@ possible values.</p>
 <dt id="ev3dev.motor.commands">
 <code class="descname">commands</code><a class="headerlink" href="#ev3dev.motor.commands" title="Permalink to this definition">¶</a></dt>
 <dd><p>Commands: read-only</p>
-<p>Returns a list of commands that are supported by the motor
+<p>Returns a space separated list of commands that are supported by the motor
 controller. Possible values are <cite>run-forever</cite>, <cite>run-to-abs-pos</cite>, <cite>run-to-rel-pos</cite>,
 <cite>run-timed</cite>, <cite>run-direct</cite>, <cite>stop</cite> and <cite>reset</cite>. Not all commands may be supported.
 <cite>run-forever</cite> will cause the motor to run until another command is sent.
@@ -604,7 +604,7 @@ to convert RPM or deg/sec to tacho counts per second.</p>
 <dt id="ev3dev.motor.state">
 <code class="descname">state</code><a class="headerlink" href="#ev3dev.motor.state" title="Permalink to this definition">¶</a></dt>
 <dd><p>State: read-only</p>
-<p>Reading returns a list of state flags. Possible flags are
+<p>Reading returns a space separated list of state flags. Possible flags are
 <cite>running</cite>, <cite>ramping</cite> <cite>holding</cite> and <cite>stalled</cite>.</p>
 </dd></dl>
 
@@ -629,7 +629,7 @@ Also, it determines the motors behavior when a run command completes. See
 <dt id="ev3dev.motor.stop_commands">
 <code class="descname">stop_commands</code><a class="headerlink" href="#ev3dev.motor.stop_commands" title="Permalink to this definition">¶</a></dt>
 <dd><p>Stop Commands: read-only</p>
-<p>Returns a list of stop modes supported by the motor controller.
+<p>Returns a space-separated list of stop modes supported by the motor controller.
 Possible values are <cite>coast</cite>, <cite>brake</cite> and <cite>hold</cite>. <cite>coast</cite> means that power will
 be removed from the motor and it will freely coast to a stop. <cite>brake</cite> means
 that power will be removed from the motor and a passive electrical load will
@@ -685,7 +685,7 @@ of the <cite>commands</cite> attribute.</p>
 <dt id="ev3dev.dc_motor.commands">
 <code class="descname">commands</code><a class="headerlink" href="#ev3dev.dc_motor.commands" title="Permalink to this definition">¶</a></dt>
 <dd><p>Commands: read-only</p>
-<p>Returns a list of commands supported by the motor
+<p>Returns a space separated list of commands supported by the motor
 controller.</p>
 </dd></dl>
 
@@ -771,7 +771,7 @@ and then stop the motor using the command specified by <cite>stop_command</cite>
 <dt id="ev3dev.dc_motor.state">
 <code class="descname">state</code><a class="headerlink" href="#ev3dev.dc_motor.state" title="Permalink to this definition">¶</a></dt>
 <dd><p>State: read-only</p>
-<p>Gets a list of flags indicating the motor status. Possible
+<p>Gets a space separated list of flags indicating the motor status. Possible
 flags are <cite>running</cite> and <cite>ramping</cite>. <cite>running</cite> indicates that the motor is
 powered. <cite>ramping</cite> indicates that the motor has not yet reached the
 <cite>duty_cycle_sp</cite>.</p>
@@ -796,7 +796,7 @@ command specified by <cite>stop_command</cite>.</p>
 <dt id="ev3dev.dc_motor.stop_commands">
 <code class="descname">stop_commands</code><a class="headerlink" href="#ev3dev.dc_motor.stop_commands" title="Permalink to this definition">¶</a></dt>
 <dd><p>Stop Commands: read-only</p>
-<p>Gets a list of stop commands. Valid values are <cite>coast</cite>
+<p>Gets a space separated list of stop commands. Valid values are <cite>coast</cite>
 and <cite>brake</cite>.</p>
 </dd></dl>
 
@@ -921,7 +921,7 @@ servos, this value will affect the rate_sp at which the speed ramps up or down.<
 <dt id="ev3dev.servo_motor.state">
 <code class="descname">state</code><a class="headerlink" href="#ev3dev.servo_motor.state" title="Permalink to this definition">¶</a></dt>
 <dd><p>State: read-only</p>
-<p>Returns a list of flags indicating the state of the servo.
+<p>Returns a space separated list of flags indicating the state of the servo.
 Possible values are:
 * <cite>running</cite>: Indicates that the motor is powered.</p>
 </dd></dl>
@@ -1027,7 +1027,7 @@ documentation to determine how to interpret the data.</p>
 <dt id="ev3dev.sensor.commands">
 <code class="descname">commands</code><a class="headerlink" href="#ev3dev.sensor.commands" title="Permalink to this definition">¶</a></dt>
 <dd><p>Commands: read-only</p>
-<p>Returns a list of the valid commands for the sensor.
+<p>Returns a space separated list of the valid commands for the sensor.
 Returns -EOPNOTSUPP if no commands are supported.</p>
 </dd></dl>
 
@@ -1065,7 +1065,7 @@ sets the sensor to that mode.</p>
 <dt id="ev3dev.sensor.modes">
 <code class="descname">modes</code><a class="headerlink" href="#ev3dev.sensor.modes" title="Permalink to this definition">¶</a></dt>
 <dd><p>Modes: read-only</p>
-<p>Returns a list of the valid modes for the sensor.</p>
+<p>Returns a space separated list of the valid modes for the sensor.</p>
 </dd></dl>
 
 <dl class="attribute">
@@ -1231,9 +1231,7 @@ Currently only I2C/NXT sensors support changing the polling period.</p>
 <dl class="class">
 <dt id="ev3dev.led">
 <em class="property">class </em><code class="descclassname">ev3dev.</code><code class="descname">led</code><a class="headerlink" href="#ev3dev.led" title="Permalink to this definition">¶</a></dt>
-<dd><p>Any device controlled by the generic LED driver.
-See <a class="reference external" href="https://www.kernel.org/doc/Documentation/leds/leds-class.txt">https://www.kernel.org/doc/Documentation/leds/leds-class.txt</a>
-for more details.</p>
+<dd><p>Any device controlled by the generic LED driver.</p>
 <dl class="staticmethod">
 <dt id="ev3dev.led.all_off">
 <em class="property">static </em><code class="descname">all_off</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &rarr; None<a class="headerlink" href="#ev3dev.led.all_off" title="Permalink to this definition">¶</a></dt>
@@ -1251,27 +1249,9 @@ for more details.</p>
 <p>Sets the brightness level. Possible values are from 0 to <cite>max_brightness</cite>.</p>
 </dd></dl>
 
-<dl class="attribute">
-<dt id="ev3dev.led.delay_off">
-<code class="descname">delay_off</code><a class="headerlink" href="#ev3dev.led.delay_off" title="Permalink to this definition">¶</a></dt>
-<dd><p>Delay Off: read/write</p>
-<p>The <cite>timer</cite> trigger will periodically change the LED brightness between
-0 and the current brightness setting. The <cite>off</cite> time can
-be specified via <cite>delay_off</cite> attribute in milliseconds.</p>
-</dd></dl>
-
-<dl class="attribute">
-<dt id="ev3dev.led.delay_on">
-<code class="descname">delay_on</code><a class="headerlink" href="#ev3dev.led.delay_on" title="Permalink to this definition">¶</a></dt>
-<dd><p>Delay On: read/write</p>
-<p>The <cite>timer</cite> trigger will periodically change the LED brightness between
-0 and the current brightness setting. The <cite>on</cite> time can
-be specified via <cite>delay_on</cite> attribute in milliseconds.</p>
-</dd></dl>
-
 <dl class="method">
 <dt id="ev3dev.led.flash">
-<code class="descname">flash</code><span class="sig-paren">(</span><em>(led)arg1</em>, <em>(int)on_ms</em>, <em>(int)off_ms</em><span class="sig-paren">)</span> &rarr; None<a class="headerlink" href="#ev3dev.led.flash" title="Permalink to this definition">¶</a></dt>
+<code class="descname">flash</code><span class="sig-paren">(</span><em>(led)arg1</em>, <em>(int)interval_ms</em><span class="sig-paren">)</span> &rarr; None<a class="headerlink" href="#ev3dev.led.flash" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="staticmethod">
@@ -1288,7 +1268,7 @@ be specified via <cite>delay_on</cite> attribute in milliseconds.</p>
 <dt id="ev3dev.led.max_brightness">
 <code class="descname">max_brightness</code><a class="headerlink" href="#ev3dev.led.max_brightness" title="Permalink to this definition">¶</a></dt>
 <dd><p>Max Brightness: read-only</p>
-<p>Returns the maximum allowable brightness value.</p>
+<p>Gets the maximum allowable brightness value</p>
 </dd></dl>
 
 <dl class="method">
@@ -1311,30 +1291,21 @@ be specified via <cite>delay_on</cite> attribute in milliseconds.</p>
 <em class="property">static </em><code class="descname">red_on</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &rarr; None<a class="headerlink" href="#ev3dev.led.red_on" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
+<dl class="method">
+<dt id="ev3dev.led.set_off_delay">
+<code class="descname">set_off_delay</code><span class="sig-paren">(</span><em>(led)arg1</em>, <em>(int)ms</em><span class="sig-paren">)</span> &rarr; None<a class="headerlink" href="#ev3dev.led.set_off_delay" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ev3dev.led.set_on_delay">
+<code class="descname">set_on_delay</code><span class="sig-paren">(</span><em>(led)arg1</em>, <em>(int)ms</em><span class="sig-paren">)</span> &rarr; None<a class="headerlink" href="#ev3dev.led.set_on_delay" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
 <dl class="attribute">
 <dt id="ev3dev.led.trigger">
 <code class="descname">trigger</code><a class="headerlink" href="#ev3dev.led.trigger" title="Permalink to this definition">¶</a></dt>
 <dd><p>Trigger: read/write</p>
-<p>Sets the led trigger. A trigger
-is a kernel based source of led events. Triggers can either be simple or
-complex. A simple trigger isn&#8217;t configurable and is designed to slot into
-existing subsystems with minimal additional code. Examples are the <cite>ide-disk</cite> and
-<cite>nand-disk</cite> triggers.</p>
-<p>Complex triggers whilst available to all LEDs have LED specific
-parameters and work on a per LED basis. The <cite>timer</cite> trigger is an example.
-The <cite>timer</cite> trigger will periodically change the LED brightness between
-0 and the current brightness setting. The <cite>on</cite> and <cite>off</cite> time can
-be specified via <cite>delay_{on,off}</cite> attributes in milliseconds.
-You can change the brightness value of a LED independently of the timer
-trigger. However, if you set the brightness value to 0 it will
-also disable the <cite>timer</cite> trigger.</p>
-</dd></dl>
-
-<dl class="attribute">
-<dt id="ev3dev.led.triggers">
-<code class="descname">triggers</code><a class="headerlink" href="#ev3dev.led.triggers" title="Permalink to this definition">¶</a></dt>
-<dd><p>Triggers: read-only</p>
-<p>Returns a list of available triggers.</p>
+<p>Sets the led trigger.</p>
 </dd></dl>
 
 </dd></dl>
@@ -1388,33 +1359,6 @@ Uses the built-in legoev3-battery if none is specified.</p>
 <dt id="ev3dev.button">
 <em class="property">class </em><code class="descclassname">ev3dev.</code><code class="descname">button</code><a class="headerlink" href="#ev3dev.button" title="Permalink to this definition">¶</a></dt>
 <dd><p>EV3 buttons</p>
-<dl class="method">
-<dt id="ev3dev.button.onclick">
-<code class="descname">onclick</code><span class="sig-paren">(</span><em>(button)arg1</em>, <em>(object)callable</em><span class="sig-paren">)</span> &rarr; None :<a class="headerlink" href="#ev3dev.button.onclick" title="Permalink to this definition">¶</a></dt>
-<dd><p>Set function to be called when the button is clicked.</p>
-</dd></dl>
-
-<dl class="attribute">
-<dt id="ev3dev.button.pressed">
-<code class="descname">pressed</code><a class="headerlink" href="#ev3dev.button.pressed" title="Permalink to this definition">¶</a></dt>
-<dd><p>Check if the button is pressed</p>
-</dd></dl>
-
-<dl class="method">
-<dt id="ev3dev.button.process">
-<code class="descname">process</code><span class="sig-paren">(</span><em>(button)arg1</em><span class="sig-paren">)</span> &rarr; bool :<a class="headerlink" href="#ev3dev.button.process" title="Permalink to this definition">¶</a></dt>
-<dd><p>Checks if the button state has changed,
-calls function in case it has.
-Returns true if the state has changed since the last call.</p>
-</dd></dl>
-
-<dl class="staticmethod">
-<dt id="ev3dev.button.process_all">
-<em class="property">static </em><code class="descname">process_all</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &rarr; bool :<a class="headerlink" href="#ev3dev.button.process_all" title="Permalink to this definition">¶</a></dt>
-<dd><p>Calls process() for each of the EV3 buttons.
-Returns true if any of the states have changed since the last call.</p>
-</dd></dl>
-
 </dd></dl>
 
 <dl class="class">
@@ -1557,7 +1501,7 @@ Nothing will be drawn on the screen until this function is called.</p>
         <li class="right" >
           <a href="py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="#">ev3dev 0.2.1.post17 documentation</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="#">ev3dev 0.2.1.post18 documentation</a> &raquo;</li> 
       </ul>
     </div>
 
