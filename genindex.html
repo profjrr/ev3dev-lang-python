@@ -7,7 +7,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Index &mdash; ev3dev 0.2.1.post18 documentation</title>
+    <title>Index &mdash; ev3dev 0.2.1.post19 documentation</title>
     
     <link rel="stylesheet" href="_static/pyramid.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -15,7 +15,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '0.2.1.post18',
+        VERSION:     '0.2.1.post19',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -24,7 +24,7 @@
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="top" title="ev3dev 0.2.1.post18 documentation" href="index.html" />
+    <link rel="top" title="ev3dev 0.2.1.post19 documentation" href="index.html" />
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Neuton&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Nobile:regular,italic,bold,bolditalic&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
 <!--[if lte IE 6]>
@@ -43,7 +43,7 @@
         <li class="right" >
           <a href="py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">ev3dev 0.2.1.post18 documentation</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="index.html">ev3dev 0.2.1.post19 documentation</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -74,6 +74,7 @@
  | <a href="#T"><strong>T</strong></a>
  | <a href="#U"><strong>U</strong></a>
  | <a href="#V"><strong>V</strong></a>
+ | <a href="#Y"><strong>Y</strong></a>
  
 </div>
 <h2 id="A">A</h2>
@@ -84,7 +85,7 @@
   </dt>
 
       
-  <dt><a href="index.html#ev3dev.led.all_on">all_on() (ev3dev.led static method)</a>
+  <dt><a href="index.html#ev3dev.led.amber_on">amber_on() (ev3dev.led static method)</a>
   </dt>
 
       
@@ -123,14 +124,18 @@
   <dt><a href="index.html#ev3dev.sensor.bin_data_format">bin_data_format (ev3dev.sensor attribute)</a>
   </dt>
 
-  </dl></td>
-  <td style="width: 33%" valign="top"><dl>
       
   <dt><a href="index.html#ev3dev.sensor.bin_data_raw">bin_data_raw (ev3dev.sensor attribute)</a>
   </dt>
 
+  </dl></td>
+  <td style="width: 33%" valign="top"><dl>
       
   <dt><a href="index.html#ev3dev.led.brightness">brightness (ev3dev.led attribute)</a>
+  </dt>
+
+      
+  <dt><a href="index.html#ev3dev.led.brightness_pct">brightness_pct (ev3dev.led attribute)</a>
   </dt>
 
       
@@ -208,15 +213,23 @@
   </dt>
 
       
-  <dt><a href="index.html#ev3dev.device">device (class in ev3dev)</a>
+  <dt><a href="index.html#ev3dev.led.delay_off">delay_off (ev3dev.led attribute)</a>
   </dt>
 
       
-  <dt><a href="index.html#ev3dev.LCD.draw">draw (ev3dev.LCD attribute)</a>
+  <dt><a href="index.html#ev3dev.led.delay_on">delay_on (ev3dev.led attribute)</a>
+  </dt>
+
+      
+  <dt><a href="index.html#ev3dev.device">device (class in ev3dev)</a>
   </dt>
 
   </dl></td>
   <td style="width: 33%" valign="top"><dl>
+      
+  <dt><a href="index.html#ev3dev.LCD.draw">draw (ev3dev.LCD attribute)</a>
+  </dt>
+
       
   <dt><a href="index.html#ev3dev.dc_motor.driver_name">driver_name (ev3dev.dc_motor attribute)</a>
   </dt>
@@ -328,10 +341,6 @@
   </dt>
 
       
-  <dt><a href="index.html#ev3dev.led.green_off">green_off() (ev3dev.led static method)</a>
-  </dt>
-
-      
   <dt><a href="index.html#ev3dev.led.green_on">green_on() (ev3dev.led static method)</a>
   </dt>
 
@@ -413,18 +422,22 @@
   <dt><a href="index.html#ev3dev.medium_motor">medium_motor (class in ev3dev)</a>
   </dt>
 
-  </dl></td>
-  <td style="width: 33%" valign="top"><dl>
       
   <dt><a href="index.html#ev3dev.servo_motor.mid_pulse_sp">mid_pulse_sp (ev3dev.servo_motor attribute)</a>
   </dt>
 
+  </dl></td>
+  <td style="width: 33%" valign="top"><dl>
       
   <dt><a href="index.html#ev3dev.servo_motor.min_pulse_sp">min_pulse_sp (ev3dev.servo_motor attribute)</a>
   </dt>
 
       
   <dt><a href="index.html#ev3dev.power_supply.min_voltage">min_voltage (ev3dev.power_supply attribute)</a>
+  </dt>
+
+      
+  <dt><a href="index.html#ev3dev.led.mix_colors">mix_colors() (ev3dev.led static method)</a>
   </dt>
 
       
@@ -471,12 +484,12 @@
   <dt><a href="index.html#ev3dev.remote_control.on_blue_down">on_blue_down() (ev3dev.remote_control method)</a>
   </dt>
 
-  </dl></td>
-  <td style="width: 33%" valign="top"><dl>
       
   <dt><a href="index.html#ev3dev.remote_control.on_blue_up">on_blue_up() (ev3dev.remote_control method)</a>
   </dt>
 
+  </dl></td>
+  <td style="width: 33%" valign="top"><dl>
       
   <dt><a href="index.html#ev3dev.remote_control.on_red_down">on_red_down() (ev3dev.remote_control method)</a>
   </dt>
@@ -487,6 +500,14 @@
 
       
   <dt><a href="index.html#ev3dev.remote_control.on_state_change">on_state_change() (ev3dev.remote_control method)</a>
+  </dt>
+
+      
+  <dt><a href="index.html#ev3dev.button.onclick">onclick() (ev3dev.button method)</a>
+  </dt>
+
+      
+  <dt><a href="index.html#ev3dev.led.orange_on">orange_on() (ev3dev.led static method)</a>
   </dt>
 
   </dl></td>
@@ -543,12 +564,12 @@
   <dt><a href="index.html#ev3dev.motor.position_d">position_d (ev3dev.motor attribute)</a>
   </dt>
 
-  </dl></td>
-  <td style="width: 33%" valign="top"><dl>
       
   <dt><a href="index.html#ev3dev.motor.position_i">position_i (ev3dev.motor attribute)</a>
   </dt>
 
+  </dl></td>
+  <td style="width: 33%" valign="top"><dl>
       
   <dt><a href="index.html#ev3dev.motor.position_p">position_p (ev3dev.motor attribute)</a>
   </dt>
@@ -568,7 +589,21 @@
   </dt>
 
       
-  <dt><a href="index.html#ev3dev.remote_control.process">process() (ev3dev.remote_control method)</a>
+  <dt><a href="index.html#ev3dev.button.pressed">pressed (ev3dev.button attribute)</a>
+  </dt>
+
+      
+  <dt><a href="index.html#ev3dev.button.process">process() (ev3dev.button method)</a>
+  </dt>
+
+      <dd><dl>
+        
+  <dt><a href="index.html#ev3dev.remote_control.process">(ev3dev.remote_control method)</a>
+  </dt>
+
+      </dl></dd>
+      
+  <dt><a href="index.html#ev3dev.button.process_all">process_all() (ev3dev.button static method)</a>
   </dt>
 
   </dl></td>
@@ -599,10 +634,6 @@
       </dl></dd>
       
   <dt><a href="index.html#ev3dev.servo_motor.rate_sp">rate_sp (ev3dev.servo_motor attribute)</a>
-  </dt>
-
-      
-  <dt><a href="index.html#ev3dev.led.red_off">red_off() (ev3dev.led static method)</a>
   </dt>
 
       
@@ -688,6 +719,10 @@
 
       </dl></dd>
       
+  <dt><a href="index.html#ev3dev.led.set_amber">set_amber() (ev3dev.led static method)</a>
+  </dt>
+
+      
   <dt><a href="index.html#ev3dev.device.set_attr_int">set_attr_int() (ev3dev.device method)</a>
   </dt>
 
@@ -696,11 +731,19 @@
   </dt>
 
       
-  <dt><a href="index.html#ev3dev.led.set_off_delay">set_off_delay() (ev3dev.led method)</a>
+  <dt><a href="index.html#ev3dev.led.set_green">set_green() (ev3dev.led static method)</a>
   </dt>
 
       
-  <dt><a href="index.html#ev3dev.led.set_on_delay">set_on_delay() (ev3dev.led method)</a>
+  <dt><a href="index.html#ev3dev.led.set_orange">set_orange() (ev3dev.led static method)</a>
+  </dt>
+
+      
+  <dt><a href="index.html#ev3dev.led.set_red">set_red() (ev3dev.led static method)</a>
+  </dt>
+
+      
+  <dt><a href="index.html#ev3dev.led.set_yellow">set_yellow() (ev3dev.led static method)</a>
   </dt>
 
       
@@ -715,12 +758,12 @@
   <dt><a href="index.html#ev3dev.sound_sensor">sound_sensor (class in ev3dev)</a>
   </dt>
 
+  </dl></td>
+  <td style="width: 33%" valign="top"><dl>
       
   <dt><a href="index.html#ev3dev.sound.speak">speak() (ev3dev.sound static method)</a>
   </dt>
 
-  </dl></td>
-  <td style="width: 33%" valign="top"><dl>
       
   <dt><a href="index.html#ev3dev.motor.speed">speed (ev3dev.motor attribute)</a>
   </dt>
@@ -811,14 +854,18 @@
   <dt><a href="index.html#ev3dev.sound.tone">tone() (ev3dev.sound static method)</a>
   </dt>
 
-  </dl></td>
-  <td style="width: 33%" valign="top"><dl>
       
   <dt><a href="index.html#ev3dev.touch_sensor">touch_sensor (class in ev3dev)</a>
   </dt>
 
+  </dl></td>
+  <td style="width: 33%" valign="top"><dl>
       
   <dt><a href="index.html#ev3dev.led.trigger">trigger (ev3dev.led attribute)</a>
+  </dt>
+
+      
+  <dt><a href="index.html#ev3dev.led.triggers">triggers (ev3dev.led attribute)</a>
   </dt>
 
       
@@ -853,6 +900,16 @@
   <td style="width: 33%" valign="top"><dl>
       
   <dt><a href="index.html#ev3dev.sensor.value">value() (ev3dev.sensor method)</a>
+  </dt>
+
+  </dl></td>
+</tr></table>
+
+<h2 id="Y">Y</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%" valign="top"><dl>
+      
+  <dt><a href="index.html#ev3dev.led.yellow_on">yellow_on() (ev3dev.led static method)</a>
   </dt>
 
   </dl></td>
@@ -894,7 +951,7 @@
         <li class="right" >
           <a href="py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">ev3dev 0.2.1.post18 documentation</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="index.html">ev3dev 0.2.1.post19 documentation</a> &raquo;</li> 
       </ul>
     </div>
 
